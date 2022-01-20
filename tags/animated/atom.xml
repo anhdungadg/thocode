@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://cecilapp.github.io/the-butler/tags/animated/</id>
-  <title>The Butler - Animated</title>
-  <subtitle><![CDATA[A ready to use static blog, powered by Cecil.]]></subtitle>
+  <title>Thợ Code - Animated</title>
+  <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
   <link href="https://cecilapp.github.io/the-butler/tags/animated/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://cecilapp.github.io/the-butler/tags/animated/" rel="alternate" type="text/html" />
   <updated>2020-03-09T01:00:00+01:00</updated>
   <author>
-    <name>The Butler</name>
+    <name>Thợ Code</name>
     <uri>https://cecilapp.github.io/the-butler/</uri>
   </author>
   <entry xml:lang="en">
