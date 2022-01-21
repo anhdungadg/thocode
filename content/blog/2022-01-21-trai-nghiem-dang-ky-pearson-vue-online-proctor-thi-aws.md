@@ -6,7 +6,7 @@ tags:
   - aws
   - online proctor
   - pearsonvue
-draft: true
+draft: false
 ---
 Tui đẻ ra ở thời Web 1.0 rồi lớn lên đi mần, kiếm ăn nhờ Web 2.0, bây giờ là kỷ nguyên Web 3.0 của metaverse gì gì đó nên tui rất có niềm tin vào mọi thứ sẽ được “trực tuyến hóa” một cách tuyệt vời. Nhưng rồi sau trải nghiệm tồi tệ lần đầu tiên, cũng như thấy được cơ số chuyện ba trợn xảy đến với mọi người nên thôi tui quyết định quay về với truyền thống, đăng ký thi ở Testing Center…
 
