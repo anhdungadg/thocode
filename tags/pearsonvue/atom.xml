@@ -5,11 +5,63 @@
   <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
   <link href="https://cecilapp.github.io/the-butler/tags/pearsonvue/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://cecilapp.github.io/the-butler/tags/pearsonvue/" rel="alternate" type="text/html" />
-  <updated>2022-01-09T06:32:58+01:00</updated>
+  <updated>2022-01-09T18:51:46+01:00</updated>
   <author>
     <name>Thợ Code</name>
     <uri>https://cecilapp.github.io/the-butler/</uri>
   </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/kinh-nghiem-thi-aws-certified-solutions-architect-associate-saa-c02/</id>
+    <title>Kinh nghiệm thi AWS Certified Solutions Architect – Associate (SAA-C02)</title>
+    <content type="html">
+      <![CDATA[<!--StartFragment-->
+<p>Tưởng tượng mớ kiến thức học mấy tháng qua y chang như là dưa kiệu ngâm ăn Tết vậy đó, mới làm xong nhận vô trong hủ thì ăn liền không có được vì nó chưa có thấm, chưa mềm, chưa lên men đủ… bla bla bla. Thành ra làm Practice Test mà không ổn thì nên nghỉ ngơi mấy bữa, chả buồn đụng tới thì mọi thứ có vẻ bắt đầu ổn dần, nhưng cũng đừng để lâu quá chua lét khỏi ăn nha!</p>
+<!--EndFragment-->
+<!-- excerpt -->
+<!--StartFragment-->
+<p>Tui mới thi xong nên biên mấy dòng trước là để ghi lại kỷ niệm lâu rồi mới ngồi lại học hành một cách gần gần nghiêm chỉnh, sau là để chia sẻ thêm thông tin với bà con.</p>
+<h2 id="có-cần-mua-dump-không">Có cần mua dump không?</h2>
+<p>Không cần!</p>
+<p>Ban đầu cũng khá cân nhắc mấy chỗ như kiểu skillcertpro hoặc mấy ông bán dump bao đậu trên FB, mà thiệt tình là nhìn hên xui may rủi quá, không biết gốc gác từ đâu ra, coi một số dump mẫu trước khi mua thì phần giải thích đáp án khá sơ sài, chưa kể đề thi cũng updated hoài chứ đâu có như Tứ thư Ngũ kinh. Còn lý do chính là tui nhận ra tui hiện tại không thể học thuộc lòng nổi nữa rồi, vì có quá nhiều dịch vụ/ tình huống cần phải nhớ rồi. Nếu có thể nhớ hết được thì chắc là dump cũng có lợi.</p>
+<p>Thiên hạ khen chê đủ kiểu:</p>
+<h2 id="nên-đăng-ký-tài-khoản-aws-để-thực-hành-không">Nên đăng ký tài khoản AWS để thực hành không?</h2>
+<p>Nên!</p>
+<p>Chắc chắn là rất nên. Ban đầu, để đỡ mất thời gian cũng như suy nghĩ thiển cận rằng làm thiệt mà không để ý free tier thì mắc công bị charge tiền nữa nên hầu như tui đều bỏ qua hết mấy phần Hands On và hậu quả là sau khi đi luyện mấy bài Practice Test có nhiều câu tui làm sai tới 4 lần luôn, đỉnh cao tới mức đã ghi lại, vẽ mind map mà do quá nhiều thứ để nhớ nên cuối cùng không thể nhớ nỗi thứ đó là thứ nào.</p>
+<p>Và cuối cùng thì phần nào mà không cách nào nhớ nỗi tui đi kiếm sample/ tutorial coi để thực hành lại, nhìn thấy được kết quả thiệt nó chạy thế nào sau khi mình lắp ghép mớ đồ hàng của AWS chính là cách tốt nhất để nhớ dịch vụ đó nó làm cái gì, gắn với cái gì trong tình huống nào.</p>
+<p>Sau khi làm Hands On xong thì nhớ dọn dẹp sạch sẽ là được. Để an tâm hơn thì cũng nên set Billing Budgets cho khỏi lo xài quá trớn.</p>
+<h2 id="tui-đã-luyện-bằng-cách-nào">Tui đã luyện bằng cách nào?</h2>
+<ul>
+<li>Học trên Udemy: khóa Ultimate AWS Certified Solutions Architect Associate 2021 (giờ thấy đã cập nhật lên 2022 rồi) của Stephane Maarek: <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/"></a><a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/">https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/</a></li>
+<li>Luyện thêm khóa Practice bằng khóa Practice Exams | AWS Certified Solutions Architect Associate (<a href="https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/"></a><a href="https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/">https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/</a>). Tui thấy khóa này khá ổn, cover đầy đủ kiến thức để đi thi, mấy bài Parctice giải thích đáp án cũng rất rõ ràng, chịu khó đọc hết là được, chưa kể là có update thường xuyên. Ngoài ra còn coi lẻ tẻ ở <a href="http://examptopics.com/">examptopics.com</a> cũng như là khóa AWS Certified Solutions Architect Associate Practice Tests (SAA-C02) + Exam Simulator + Explanations + AWS Cheat Sheets của Neal Davis cũng trên Udemy.</li>
+<li>Ghi notes, vẽ mind map. Tui share cái mind map của tui ở đây, chắc chắn là ở trỏng còn sai tè le, đừng có tin nha.</li>
+<li>Thực hành thực tế lại những phần không hiểu, câu nào làm sai vài ba lần thì lôi mấy cái services ở trong ra đem hands on đúng tình huống trong câu hỏi đó luôn.</li>
+</ul>
+<h2 id="đăng-ký-thi-kiểu-gì">Đăng ký thi kiểu gì?</h2>
+<p>AWS họ có 2 đối tác khảo thí là PSI và Pearson VUE, cả 2 chỗ này đều có 2 hình thức là thi tại trung tâm liên kết (Testing Center) và thi online (Online Proctor), do đã có <a href="https://anhdung.me/2022/01/09/trai-nghiem-dang-ky-pearson-vue-online-proctor-thi-aws/">trải nghiệm khá là ba trợn với Pearson VUE online</a> nên sau khi được refund tui quyết định quay về với truyền thống, đăng ký thi ở Testing Center là partner với Pearson VUE (chọn Pearson VUE là vì cứ tưởng hơn PSI được 10p ai dè tới chừng vô thi mới biết 10p đó để làm survey sau khi thi xong, đúng là đánh lận con đen thiệt chớ).</p>
+<p>Tất nhiên, lần tới nữa nếu có điều kiện thì tui vẫn muốn thử Online Proctor coi thế nào, còn đây là những cái lợi nếu ở Testing Center mà Online Proctor không có được:</p>
+<ul>
+<li>Không phải lo lắng việc check-in, ở xứ mình thì chỉ cần cầm theo CMND/ CCCD là được, điền tên ký tên bằng mẹ đẻ hết. Ngược lại thì: nếu Testing Center ở xa quá thì mắc công lo kẹt xe, đi lại các kiểu, tuy nhiên ở xứ mình nếu việc đi Sài Gòn, Đà Nẵng, Hà Nội không thành vấn đề với bạn thì cũng chẳng có gì phải lo luôn.</li>
+<li>Mấy cái Testing Center cơ sở vật chất khá ổn, thậm chí mình còn coi được hình phòng thi trước nếu quá lo lắng máy móc không quen.</li>
+<li>Khỏi lo dọn dẹp cái bàn để thi, cũng như là việc có ai đó vô tình kêu mình hoặc là bà bán cá đầu xóm bỗng dưng xắn quần lên chửi ông bán trứng um sùm. Thấy nhiều người review giám thị online bắt họ dẹp cả máy PS cùng mấy thứ linh tinh khác nữa.</li>
+<li>Không như thi Online thì bị bắt nhìn chầm chầm thẳng vô Webcam, không được liếc chỗ khác, không được rời khỏi webcam trong suốt thời gian thi, không được dùng tay che miệng, không đọc câu hỏi thì thầm… bla bla bla… Khá là khó nhưng kể ra cũng đúng, tại giám thị online chỉ nhìn được qua mỗi cái webcam thôi.</li>
+<li>Và quan trọng là khi có sự cố (như máy tính ngủm củ tỏi, ve chai cắt dây mạng bán đồng nát…) thì ít ra ngay lúc đó có người xử lý/ giải quyết/ hoặc ghi nhận sự việc chứ không có nói kiểu “Lỗi mạng” mà chả biết mạng ai lỗi. Tất nhiên, có một điều chắc chắn rằng mọi thứ đều không chắc chắn, nên thôi lo quá cũng chả làm được gì.</li>
+</ul>
+<h2 id="có-tips-nào-không">Có tips nào không?</h2>
+<p>Có!</p>
+<ul>
+<li>Phải nhìn ra các từ khóa trong câu hỏi như là: minimize the costs, managed services, high read/ disaster recovery, reusable, SaaS… để xác định được tình huống cần giải quyết, loại bỏ các phương án không cần thiết cho đỡ mất thời gian.</li>
+<li>Có nhiều tình huống đáp án khá là đơn giản, đừng thần thánh hóa giải pháp làm gì cho sai.</li>
+<li>Tham gia cộng đồng nào đó có cùng mục tiêu với mình, đọc mấy kinh nghiệm của người vừa thi xong cũng đỡ bỡ ngỡ. Có khá nhiều cộng đồng như vậy trên Facebook Group, Reddit thậm chí cả Telegram nữa.</li>
+<li>Tìm được ai/ hoặc nhóm học chung và có thời gian cố định hàng tuần thì rất hữu ích để chống lại sự làm biếng.</li>
+<li>Nhớ request ESL trước khi thi để được thêm 30p, tổng cộng là 160p cũng đỡ lắm. Cái này ai cũng biết nhưng hay quên hoặc là chưa được Approve mà đã đăng ký thi!</li>
+<li>Tưởng tượng mớ kiến thức học mấy tháng qua y chang như là dưa kiệu ngâm ăn Tết vậy đó, mới làm xong nhận vô trong hủ thì ăn liền không có được vì nó chưa có thấm, chưa mềm, chưa lên men đủ… bla bla bla. Thành ra làm Practice Test mà không ổn thì nên nghỉ ngơi mấy bữa, chả buồn đụng tới thì mọi thứ có vẻ bắt đầu ổn dần, nhưng cũng đừng để lâu quá chua lét khỏi ăn nha!</li>
+</ul>
+<!--EndFragment-->]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/kinh-nghiem-thi-aws-certified-solutions-architect-associate-saa-c02/" rel="alternate" type="text/html" />
+    <published>2022-01-09T18:51:46+01:00</published>
+    <updated>2022-01-09T18:51:46+01:00</updated>
+  </entry>
   <entry xml:lang="en">
     <id>https://cecilapp.github.io/the-butler/blog/trai-nghiem-dang-ky-pearson-vue-online-proctor-thi-aws/</id>
     <title>Trải nghiệm đăng ký Pearson VUE Online Proctor thi AWS</title>
