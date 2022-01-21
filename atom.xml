@@ -95,12 +95,18 @@
   </entry>
   <entry xml:lang="en">
     <id>https://cecilapp.github.io/the-butler/about/</id>
-    <title>nono</title>
+    <title>About</title>
     <content type="html">
       <![CDATA[<blockquote>
 <p>A ready to use static blog, powered by <a href="https://cecil.app">Cecil</a>.</p>
 </blockquote>
 <h2 id="không-có-gì">Không có gì ?</h2>
+<blockquote>
+<p>Ba ngày không lập trình, đời trở nên vô nghĩa ~ &quot;After three days without programming, life becomes meaningless.&quot;</p>
+</blockquote>
+<pre><code>public class AlgorithmOfSuccess {
+  public static void main(String[])
+}</code></pre>
 <h3 id="managing-content-with-forestry-https-forestry-io">Managing content with <a href="https://forestry.io">Forestry</a></h3>
 <p>If your goal is managing content quickly, and decide later where to deploy to it, use the following button to import the starter blog to Forestry CMS and start editing immediatelly!</p>
 <p><a href="https://cecil.app/cms/forestry/import/"><img src="https://assets.forestry.io/import-to-forestryK.svg" alt="Import this project into Forestry" /></a></p>
