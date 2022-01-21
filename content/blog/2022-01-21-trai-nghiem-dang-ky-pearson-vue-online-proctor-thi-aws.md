@@ -1,6 +1,6 @@
 ---
 title: Trải nghiệm đăng ký Pearson VUE Online Proctor thi AWS
-date: 2022-01-09T05:27:19.372Z
+date: 2022-01-21T05:32:58.693Z
 image: /images/jeshoots-com-2vd8lihdnw-unsplash.jpg
 tags:
   - aws
