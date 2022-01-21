@@ -1,5 +1,5 @@
 ---
-title: nono
+title: About
 date: 2019-07-09
 menu:
   main:
@@ -9,6 +9,16 @@ draft: false
 > A ready to use static blog, powered by [Cecil](https://cecil.app).
 
 ## Không có gì ?
+
+> Ba ngày không lập trình, đời trở nên vô nghĩa ~ "After three days without programming, life becomes meaningless."
+
+```
+public class AlgorithmOfSuccess {
+  public static void main(String[])
+}
+```
+
+
 
 ### Managing content with [Forestry](https://forestry.io)
 
