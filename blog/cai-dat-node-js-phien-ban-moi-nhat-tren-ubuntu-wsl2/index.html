@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Thợ Code &middot; Code ngôn ngữ nào cũng được, miễn lương thiện là được!</title>
+    <title>Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2 &middot; Thợ Code</title>
     <meta name="description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta name="keywords" content="Cecil, Static Site Generator, SSG" />
+    <meta name="keywords" content="nodejs, wsl, ubuntu, apt, packagemanager, Cecil, Static Site Generator, SSG" />
     <meta name="author" content="Arnaud Ligny" />
     <meta name="robots" content="index,follow" />
-    <link rel="first" href="https://cecilapp.github.io/the-butler/">
-    <link rel="next" href="https://cecilapp.github.io/the-butler/page/2/">
-    <link rel="last" href="https://cecilapp.github.io/the-butler/page/2/">
-    <link rel="canonical" type="text/html" title="Thợ Code &middot; Code ngôn ngữ nào cũng được, miễn lương thiện là được!" href="https://cecilapp.github.io/the-butler/" />
-    <link rel="alternate" type="application/atom+xml" title="Thợ Code &middot; Code ngôn ngữ nào cũng được, miễn lương thiện là được! (ATOM)" href="https://cecilapp.github.io/the-butler/atom.xml" />
+    <link rel="prev" href="https://cecilapp.github.io/the-butler/blog/kinh-nghiem-thi-aws-certified-solutions-architect-associate-saa-c02/">
+    <link rel="canonical" type="text/html" title="Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2 &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Thợ Code" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Thợ Code &middot; Code ngôn ngữ nào cũng được, miễn lương thiện là được!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2 &middot; Thợ Code" />
     <meta property="og:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta property="og:url" content="https://cecilapp.github.io/the-butler/" />
-    <meta name="twitter:title" content="Thợ Code &middot; Code ngôn ngữ nào cũng được, miễn lương thiện là được!" />
+    <meta property="og:url" content="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/" />
+    <meta property="og:image" content="https://cecilapp.github.io/the-butler/images/screenshot-2022-01-22-042756.eb619b1d728991c7392d5c5f7cf3d86e.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="854" />
+    <meta property="og:image:height" content="335" />
+    <meta property="og:image:alt" content="Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2 &middot; Thợ Code" />
+    <meta name="twitter:title" content="Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2 &middot; Thợ Code" />
     <meta name="twitter:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://cecilapp.github.io/the-butler/images/screenshot-2022-01-22-042756.eb619b1d728991c7392d5c5f7cf3d86e.png" />
+    <meta name="twitter:image:alt" content="Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2 &middot; Thợ Code" />
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cecilapp.github.io/the-butler/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="https://cecilapp.github.io/the-butler/favicon.ico">
@@ -48,7 +52,7 @@
           <p class="lead">Tiếng nói của giai cấp Công nhân Lập trình</p>
         </div>
         <nav class="sidebar-nav">
-          <a class="sidebar-nav-item active item-weight-0" href="https://cecilapp.github.io/the-butler/">Home</a>
+          <a class="sidebar-nav-item item-weight-0" href="https://cecilapp.github.io/the-butler/">Home</a>
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
@@ -56,33 +60,23 @@
       </div>
     </div>
     <div class="content container">
-      <div class="posts">
-        <div class="post">
-          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/">Cài đặt Node.js phiên bản "mới nhất" trên Ubuntu WSL2</a></h1>
-          <span class="post-date">16 Jan 2022</span>
-          <img src="https://cecilapp.github.io/the-butler/images/screenshot-2022-01-22-042756.png" />
-          <p>Mặc định nếu cài đặt một cách truyền thống bằng lệnh sudo apt install nodejs thì chỉ có phiên bản 10.x, lý do vì đây là phiên bản “mới nhất” là thằng package manager apt này có được.</p>
+      <h1 class="page-title">Cài đặt Node.js phiên bản "mới nhất" trên Ubuntu WSL2</h1>
+      <span class="post-date">16 Jan 2022</span>
+      <img src="https://cecilapp.github.io/the-butler/images/screenshot-2022-01-22-042756.png" />
+      <p>Mặc định nếu cài đặt một cách truyền thống bằng lệnh sudo apt install nodejs thì chỉ có phiên bản 10.x, lý do vì đây là phiên bản “mới nhất” là thằng package manager apt này có được.</p>
 <p>Trong khi hiện tại, trên trang chủ thì bản LTS là 16.x, có nhiều cách để cài bản mới nhất thiệt sự từ trang chủ, và đây là một trong những cách dễ nhất:</p>
 <p><code>cd ~ curl -sL</code><a href="https://deb.nodesource.com/setup_16.x"><code>https://deb.nodesource.com/setup_16.x</code></a><code>-o nodesource_setup.sh</code></p>
 <p><code>sudo bash nodesource_setup.sh</code></p>
 <p><code>sudo apt install nodejs</code></p>
 <p>Xong, chỉ vậy thôi! Để kiểm tra coi phiên bản nào thì chạy</p>
 <p><code>node -v</code></p>
-          <footer class="readmore">
-            <a href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/#more">Read more ›</a>
-          </footer>
-        </div>
-      </div>
-      <div class="lastposts">
-        <h2>Recent posts</h2>
-        <ul>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/kinh-nghiem-thi-aws-certified-solutions-architect-associate-saa-c02/">Kinh nghiệm thi AWS Certified Solutions Architect – Associate (SAA-C02)</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/trai-nghiem-dang-ky-pearson-vue-online-proctor-thi-aws/">Trải nghiệm đăng ký Pearson VUE Online Proctor thi AWS</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/princess-mononoke/">Thử nghiệm Princess Mononoke</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/daft-punk/">Daft Punk</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/doom/">Doom</a></li>
-        </ul>
-      </div>
+      <p>
+        <a href="https://cecilapp.github.io/the-butler/tags/nodejs/">#nodejs</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/wsl/">#wsl</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/ubuntu/">#ubuntu</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/apt/">#apt</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/packagemanager/">#packagemanager</a>&nbsp;
+      </p>
     </div>
   </body>
 </html>

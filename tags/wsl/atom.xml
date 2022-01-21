@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://cecilapp.github.io/the-butler/tags/wsl/</id>
+  <title>Thợ Code - wsl</title>
+  <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
+  <link href="https://cecilapp.github.io/the-butler/tags/wsl/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://cecilapp.github.io/the-butler/tags/wsl/" rel="alternate" type="text/html" />
+  <updated>2022-01-16T22:27:12+01:00</updated>
+  <author>
+    <name>Thợ Code</name>
+    <uri>https://cecilapp.github.io/the-butler/</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/</id>
+    <title>Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2</title>
+    <content type="html">
+      <![CDATA[<p>Mặc định nếu cài đặt một cách truyền thống bằng lệnh sudo apt install nodejs thì chỉ có phiên bản 10.x, lý do vì đây là phiên bản “mới nhất” là thằng package manager apt này có được.</p>
+<p>Trong khi hiện tại, trên trang chủ thì bản LTS là 16.x, có nhiều cách để cài bản mới nhất thiệt sự từ trang chủ, và đây là một trong những cách dễ nhất:</p>
+<p><code>cd ~ curl -sL</code><a href="https://deb.nodesource.com/setup_16.x"><code>https://deb.nodesource.com/setup_16.x</code></a><code>-o nodesource_setup.sh</code></p>
+<p><code>sudo bash nodesource_setup.sh</code></p>
+<p><code>sudo apt install nodejs</code></p>
+<p>Xong, chỉ vậy thôi! Để kiểm tra coi phiên bản nào thì chạy</p>
+<p><code>node -v</code></p>]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/" rel="alternate" type="text/html" />
+    <published>2022-01-16T22:27:12+01:00</published>
+    <updated>2022-01-16T22:27:12+01:00</updated>
+  </entry>
+</feed>

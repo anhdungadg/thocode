@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>solution architect &middot; Thợ Code</title>
+    <title>wsl &middot; Thợ Code</title>
     <meta name="description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="keywords" content="Cecil, Static Site Generator, SSG" />
     <meta name="author" content="Arnaud Ligny" />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" type="text/html" title="solution architect &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/solution-architect/" />
-    <link rel="alternate" type="application/atom+xml" title="solution architect &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/solution-architect/atom.xml" />
+    <link rel="canonical" type="text/html" title="wsl &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/wsl/" />
+    <link rel="alternate" type="application/atom+xml" title="wsl &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/wsl/atom.xml" />
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/nodejs/">
-    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/wsl/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/ubuntu/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/apt/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/packagemanager/">
@@ -23,20 +22,21 @@
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/online-proctor/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/pearsonvue/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/psi/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/solution-architect/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/film/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/animated/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/music/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/electronic/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/video-games/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/fps/">
-    <link rel="alternate" hreflang="x-default" href="https://cecilapp.github.io/the-butler/tags/solution-architect/">
+    <link rel="alternate" hreflang="x-default" href="https://cecilapp.github.io/the-butler/tags/wsl/">
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Thợ Code" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="solution architect &middot; Thợ Code" />
+    <meta property="og:title" content="wsl &middot; Thợ Code" />
     <meta property="og:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta property="og:url" content="https://cecilapp.github.io/the-butler/tags/solution-architect/" />
-    <meta name="twitter:title" content="solution architect &middot; Thợ Code" />
+    <meta property="og:url" content="https://cecilapp.github.io/the-butler/tags/wsl/" />
+    <meta name="twitter:title" content="wsl &middot; Thợ Code" />
     <meta name="twitter:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="twitter:card" content="summary" />
 
@@ -70,12 +70,16 @@
       <div class="posts">
         <div class="post">
           <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/kinh-nghiem-thi-aws-certified-solutions-architect-associate-saa-c02/">Kinh nghiệm thi AWS Certified Solutions Architect – Associate (SAA-C02)</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/">Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2</a>
           </h1>
-          <span class="post-date">9 Jan 2022</span>
-          <!--StartFragment-->
-<p>Tưởng tượng mớ kiến thức học mấy tháng qua y chang như là dưa kiệu ngâm ăn Tết vậy đó, mới làm xong nhận vô trong hủ thì ăn liền không có được vì nó chưa có thấm, chưa mềm, chưa lên men đủ… bla bla bla. Thành ra làm Practice Test mà không ổn thì nên nghỉ ngơi mấy bữa, chả buồn đụng tới thì mọi thứ có vẻ bắt đầu ổn dần, nhưng cũng đừng để lâu quá chua lét khỏi ăn nha!</p>
-<!--EndFragment-->
+          <span class="post-date">16 Jan 2022</span>
+          <p>Mặc định nếu cài đặt một cách truyền thống bằng lệnh sudo apt install nodejs thì chỉ có phiên bản 10.x, lý do vì đây là phiên bản “mới nhất” là thằng package manager apt này có được.</p>
+<p>Trong khi hiện tại, trên trang chủ thì bản LTS là 16.x, có nhiều cách để cài bản mới nhất thiệt sự từ trang chủ, và đây là một trong những cách dễ nhất:</p>
+<p><code>cd ~ curl -sL</code><a href="https://deb.nodesource.com/setup_16.x"><code>https://deb.nodesource.com/setup_16.x</code></a><code>-o nodesource_setup.sh</code></p>
+<p><code>sudo bash nodesource_setup.sh</code></p>
+<p><code>sudo apt install nodejs</code></p>
+<p>Xong, chỉ vậy thôi! Để kiểm tra coi phiên bản nào thì chạy</p>
+<p><code>node -v</code></p>
         </div>
       </div>
     </div>
