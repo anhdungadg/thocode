@@ -16,4 +16,4 @@
   CECIL_BASELINE = "Short description (~ 20 characters)"
   CECIL_DESCRIPTION = "Full description (~ 250 characters)"
   CECIL_AUTHOR = "Your name"
-  CECIL_THEME = "Theme (use 'hyde' or 'garth')"
+  CECIL_THEME = "hyde"
