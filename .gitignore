@@ -2,6 +2,6 @@ vendor/
 _site/
 .cecil/
 .cache/
-themes/*
+# themes/*
 cecil.phar
 composer.phar
