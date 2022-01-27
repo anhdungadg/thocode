@@ -6,7 +6,7 @@ menu:
     weight: 999
 draft: false
 ---
-> Code ngôn ngữ nào cũng được, miễn lương thiện là được!
+> Code gì cũng được, miễn có lương thiện là được!
 
 ```typescript
 using Life;
