@@ -27,3 +27,5 @@ hyde:
 title: Thợ Code
 baseurl: /
 canonicalurl: true
+disqus:
+  shortname: thocode
