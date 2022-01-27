@@ -39,6 +39,16 @@
     <script src="{{ asset('js/highlight-9.13.1.min.js')|url }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 {% endblock head %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44WW52V9QR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44WW52V9QR');
+</script>
+
   </head>
 {% set themes = {
   'red':     'theme-base-08',
