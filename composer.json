@@ -19,7 +19,7 @@
   },
   "config": {
     "allow-plugins": {
-      "cecil/theme-installer": false
+      "cecil/theme-installer": true
     }
   }
 }
