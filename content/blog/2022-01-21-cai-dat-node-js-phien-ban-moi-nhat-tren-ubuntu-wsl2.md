@@ -16,7 +16,7 @@ Trong khi hiện tại, trên trang chủ thì bản LTS là 16.x, có nhiều c
 
 `cd ~`
 
-`curl -sL`[`https://deb.nodesource.com/setup_16.x`](https://deb.nodesource.com/setup_16.x)`-o nodesource_setup.sh`
+`curl -sL https://deb.nodesource.com/setup_16.x-o nodesource_setup.sh`
 
 `sudo bash nodesource_setup.sh`
 
