@@ -2,7 +2,16 @@
 title: Triển khai giải pháp NFTs Marketplace trên hạ tầng AWS siêu nhanh
 date: 2022-02-06T02:27:02.831Z
 image: /images/shubham-dhage-jlijbotswuw-unsplash-1-.jpg
-draft: true
+tags:
+  - aws
+  - blockchain
+  - crypto
+  - cryptocurrency
+  - managed
+  - nft
+  - web 3.0
+  - web3
+draft: false
 ---
 <!--StartFragment-->
 
