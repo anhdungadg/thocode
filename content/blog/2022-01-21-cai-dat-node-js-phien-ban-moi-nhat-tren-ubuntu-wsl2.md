@@ -25,3 +25,5 @@ Trong khi hiện tại, trên trang chủ thì bản LTS là 16.x, có nhiều c
 Xong, chỉ vậy thôi! Để kiểm tra coi phiên bản nào thì chạy
 
 `node -v`
+
+*Phong Vân.*
