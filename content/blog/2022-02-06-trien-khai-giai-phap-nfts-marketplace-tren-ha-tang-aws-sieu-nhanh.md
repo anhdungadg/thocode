@@ -27,6 +27,8 @@ Sở dĩ lựa AWS (hay các cloud provider khác cũng thế) là tại vì m�
 
 OK, vậy chúng ta sẽ xài Ethereum Ropsten Testnet với sự giúp sức đắc lực của Amazon Managed Blockchain cùng với lủ khủ một mớ mấy cái services khác phụ họa như hình minh họa bên dưới. Tất cả những services này đều được khởi tạo bằng CloudFormation.
 
+Trong quá trình vọc vạch thì, tốn tiền nhất là Amazon Managed Blockchain vì xài On-Demand tính theo giờ, còn các services khác đều rơi vào free tier hết nên khá thoải mái. 
+
 ![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-aws-architecture.png?w=821)
 
 Hình của AWS Sample.
