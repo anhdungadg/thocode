@@ -137,7 +137,7 @@ Các lệnh bên dưới sẽ chạy trong thư mục /provision
 
 Chạy lệnh trên thì thằng CloudFormation sẽ tạo 1 stack là CDKToolkit để chuẩn bị cho việc deploy.
 
-![✅](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2705.svg) Environment aws://\*\**/ap-southeast-1 bootstrapped.
+**Environment aws://\*\**/ap-southeast-1 bootstrapped.**
 
 Chạy 3 lệnh này để vào-install dependencies-quay lại:
 
@@ -161,11 +161,11 @@ OK thì deploy, CloudFormation tiếp tục tạo stack SimpleNftMarketplaceStac
 
 `cdk deploy SimpleNftMarketplaceStack`
 
-Như đã nói ngay khúc mở đầu, không chịu update Nodejs lên đúng phiên bản CDK được hỗ trợ nên gặp đủ thứ lỗi trời ơi đất hỡi ngay khúc giữa không, mà lúc đó lỡ làm rồi nên lại làm biếng làm lại từ đầu ![😂](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f602.svg)
+Như đã nói ngay khúc mở đầu, không chịu update Nodejs lên đúng phiên bản CDK được hỗ trợ nên gặp đủ thứ lỗi trời ơi đất hỡi ngay khúc giữa không, mà lúc đó lỡ làm rồi nên lại làm biếng làm lại từ đầu 😂
 
 Số là đoạn này tui gặp lỗi vầy từ chiều, xong tui mò hoài không ra nên thôi tui đi ún gụ. Sau khi sin sỉn về vì chưa bù ngủ nên thôi tui mở máy lên tiếp rồi gõ tùm lum gì đó trong ba bốn cái terminal vừa mở ra, giờ chả nhớ đã gõ cái gì, vẫn không chạy được, thế là copy error log Google đại thì thấy trên Stackoverflow có ông nào đó trả lời về cái lỗi này cách đây 3 năm trước dù rằng nhìn đề bài thì có vẻ tay hỏi đang xài electron-builder gì đó, chưa kịp suy nghĩ coi có đúng cái mình cần không nữa, tui copy và paste vô đại, ai dè hết thấy lỗi, xong cái chạy CDK Deploy enter một phát được như là các thánh IT trong những đền thờ các huyền thoại vậy.
 
-Trời đất quỷ thần thiên địa ơi, ghê vậy trời! ![🤣](https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f923.svg)
+Trời đất quỷ thần thiên địa ơi, ghê vậy trời! 🤣
 
 Nói chứ, lỗi vầy thì đúng là liên quan đến cục electron rồi.
 
@@ -185,11 +185,14 @@ Phần này nằm trong thư mục /marketplace.
 
 Chuyển vô thư mục /marketplace rồi set các biến môi trường như bên dưới.
 
-|     |     |
-| --- | --- |
-|     |     |
-
-Nhớ thay giá trị Output ở phần Deploy API vô mấy cái biến ở trên, để ý bỏ hai dấu < > luôn nhe. <region> The region you deployed your stack in previous steps <api-endpoint> NftApiEndpoint output from Deploy API <user-pool> UserPoolId output from Deploy API <web-client> UserPoolClientId output from Deploy API
+```
+cat <<EOF > .env.local
+VUE_APP_AWS_REGION=<region>
+VUE_APP_API_ENDPOINT=<api-endpoint>
+VUE_APP_USER_POOL_ID=<user-pool>
+VUE_APP_USER_POOL_WEB_CLIENT_ID=<web-client>
+EOF
+```
 
 `sudo npm install`
 
@@ -213,8 +216,6 @@ Thấy báo địa chỉ Local với Network là OK, lấy browser mở ra vầy
 
 [![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png?w=650)](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png)
 
-Photo by [Shubham Dhage](https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blockchain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-
+Anh Dũng. Photo by [Shubham Dhage](https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blockchain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 <!--EndFragment-->
