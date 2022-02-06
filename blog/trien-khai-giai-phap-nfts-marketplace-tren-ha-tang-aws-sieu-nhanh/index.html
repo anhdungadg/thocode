@@ -68,7 +68,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.83.2" />
+    <meta name="generator" content="Cecil 5.83.3" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -84,7 +84,7 @@
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.83.2">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.83.3">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
@@ -156,7 +156,7 @@
 <p><code>export CONTRACT_ADDRESS='&lt;contract ở (1)&gt;'</code></p>
 <p><code>cdk bootstrap</code></p>
 <p>Chạy lệnh trên thì thằng CloudFormation sẽ tạo 1 stack là CDKToolkit để chuẩn bị cho việc deploy.</p>
-<p><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2705.svg" alt="✅" /> Environment aws://***/ap-southeast-1 bootstrapped.</p>
+<p><strong>Environment aws://*\</strong>/ap-southeast-1 bootstrapped.**</p>
 <p>Chạy 3 lệnh này để vào-install dependencies-quay lại:</p>
 <p><code>cd lambda; npm install; cd -;</code></p>
 <p>Copy complied contract (SimpleERC721.json) vào /lambda/contracts/</p>
@@ -168,9 +168,9 @@
 <p><code>echo $CONTRACT_ADDRESS</code></p>
 <p>OK thì deploy, CloudFormation tiếp tục tạo stack SimpleNftMarketplaceStack.</p>
 <p><code>cdk deploy SimpleNftMarketplaceStack</code></p>
-<p>Như đã nói ngay khúc mở đầu, không chịu update Nodejs lên đúng phiên bản CDK được hỗ trợ nên gặp đủ thứ lỗi trời ơi đất hỡi ngay khúc giữa không, mà lúc đó lỡ làm rồi nên lại làm biếng làm lại từ đầu <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f602.svg" alt="😂" /></p>
+<p>Như đã nói ngay khúc mở đầu, không chịu update Nodejs lên đúng phiên bản CDK được hỗ trợ nên gặp đủ thứ lỗi trời ơi đất hỡi ngay khúc giữa không, mà lúc đó lỡ làm rồi nên lại làm biếng làm lại từ đầu 😂</p>
 <p>Số là đoạn này tui gặp lỗi vầy từ chiều, xong tui mò hoài không ra nên thôi tui đi ún gụ. Sau khi sin sỉn về vì chưa bù ngủ nên thôi tui mở máy lên tiếp rồi gõ tùm lum gì đó trong ba bốn cái terminal vừa mở ra, giờ chả nhớ đã gõ cái gì, vẫn không chạy được, thế là copy error log Google đại thì thấy trên Stackoverflow có ông nào đó trả lời về cái lỗi này cách đây 3 năm trước dù rằng nhìn đề bài thì có vẻ tay hỏi đang xài electron-builder gì đó, chưa kịp suy nghĩ coi có đúng cái mình cần không nữa, tui copy và paste vô đại, ai dè hết thấy lỗi, xong cái chạy CDK Deploy enter một phát được như là các thánh IT trong những đền thờ các huyền thoại vậy.</p>
-<p>Trời đất quỷ thần thiên địa ơi, ghê vậy trời! <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f923.svg" alt="🤣" /></p>
+<p>Trời đất quỷ thần thiên địa ơi, ghê vậy trời! 🤣</p>
 <p>Nói chứ, lỗi vầy thì đúng là liên quan đến cục electron rồi.</p>
 <p><code>Error: EACCES: permission denied, stat '/root/.cache/electron/8c5c987a73913c5646db497de9f6f9676033aa1586938d0d2c9cac8ac37f7e20/electron-v15.3.2-linux-x64.zip'</code></p>
 <p>Vậy nên coi ở đây <a href="https://stackoverflow.com/questions/51469367/electron-builder-eacces-permission-denied"></a><a href="https://stackoverflow.com/questions/51469367/electron-builder-eacces-permission-denied">https://stackoverflow.com/questions/51469367/electron-builder-eacces-permission-denied</a> rồi cọp 2 lệnh này chạy, xong chạy lại cái cdk deploy là OK. Tuyệt vời phải không nào, cảm ơn Internet, cảm ơn ai đã mang Stackoverflow đến với thế giới loài người.</p>
@@ -180,21 +180,12 @@
 <h1 id="4-frontend">4. Frontend</h1>
 <p>Phần này nằm trong thư mục /marketplace.</p>
 <p>Chuyển vô thư mục /marketplace rồi set các biến môi trường như bên dưới.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Nhớ thay giá trị Output ở phần Deploy API vô mấy cái biến ở trên, để ý bỏ hai dấu &lt; &gt; luôn nhe. <region> The region you deployed your stack in previous steps <api-endpoint> NftApiEndpoint output from Deploy API <user-pool> UserPoolId output from Deploy API <web-client> UserPoolClientId output from Deploy API</p>
+<pre><code>cat &lt;&lt;EOF &gt; .env.local
+VUE_APP_AWS_REGION=&lt;region&gt;
+VUE_APP_API_ENDPOINT=&lt;api-endpoint&gt;
+VUE_APP_USER_POOL_ID=&lt;user-pool&gt;
+VUE_APP_USER_POOL_WEB_CLIENT_ID=&lt;web-client&gt;
+EOF</code></pre>
 <p><code>sudo npm install</code></p>
 <p>Không hiểu mình chạy thì lỗi “npm ERR! Response timeout while trying to fetch <a href="https://registry.npmjs.org/fs-extra"></a><a href="https://registry.npmjs.org/fs-extra">https://registry.npmjs.org/fs-extra</a> (over 30000ms)” nên phải</p>
 <p><code>npm set timeout=100000</code></p>
@@ -206,7 +197,7 @@
 <p><code>npm i @vue/cli-service</code></p>
 <p>Thấy báo địa chỉ Local với Network là OK, lấy browser mở ra vầy là coi như OK lần 2.</p>
 <p><a href="https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png"><img src="/assetsraudangdat.files.wordpress.com202201nft-marketplace-frontend.87f482b7ed1e808ebc3925cec59f2c04.png" alt="" loading="lazy" width="650" height="615" /></a></p>
-<p>Photo by <a href="https://unsplash.com/@theshubhamdhage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shubham Dhage</a> on <a href="https://unsplash.com/s/photos/blockchain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+<p>Anh Dũng. Photo by <a href="https://unsplash.com/@theshubhamdhage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shubham Dhage</a> on <a href="https://unsplash.com/s/photos/blockchain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <!--EndFragment-->
       <p>
         <a href="https://cecilapp.github.io/the-butler/tags/aws/">#aws</a>&nbsp;
