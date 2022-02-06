@@ -141,7 +141,8 @@ EOF</code></pre>
 <p><code>sudo bash nodesource_setup.sh</code></p>
 <p><code>sudo apt install nodejs</code></p>
 <p>Xong, chỉ vậy thôi! Để kiểm tra coi phiên bản nào thì chạy</p>
-<p><code>node -v</code></p>]]>
+<p><code>node -v</code></p>
+<p><em>Phong Vân.</em></p>]]>
     </content>
     <link href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/" rel="alternate" type="text/html" />
     <published>2022-01-16T22:27:12+01:00</published>
