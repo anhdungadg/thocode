@@ -27,7 +27,7 @@ Sở dĩ lựa AWS (hay các cloud provider khác cũng thế) là tại vì m�
 
 OK, vậy chúng ta sẽ xài Ethereum Ropsten Testnet với sự giúp sức đắc lực của Amazon Managed Blockchain cùng với lủ khủ một mớ mấy cái services khác phụ họa như hình minh họa bên dưới. Tất cả những services này đều được khởi tạo bằng CloudFormation.
 
-[![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-aws-architecture.png?w=821)](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-aws-architecture.png)
+![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-aws-architecture.png?w=821)
 
 Hình của AWS Sample.
 
@@ -35,7 +35,7 @@ Hình của AWS Sample.
 
 Kiểm tra phiên bản Nodejs, mấy phiên bản cũ quá không còn support hay gặp nhiều lỗi trời ơi đất hỡi lắm. Trên Ubuntu mặc định cài vô là bản 10.x, thành ra phải update hoặc lúc cài mới nhớ chú ý theo hướng dẫn này: [](https://thocode.net/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/)<https://thocode.net/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/>
 
-[![](https://raudangdat.files.wordpress.com/2022/01/cdk-nodejs-unsupport-version.png?w=1024)](https://raudangdat.files.wordpress.com/2022/01/cdk-nodejs-unsupport-version.png)
+![](https://raudangdat.files.wordpress.com/2022/01/cdk-nodejs-unsupport-version.png?w=1024)
 
 CDK không chạy được với các phiên bản Nodejs cũ.
 
@@ -82,20 +82,22 @@ Tiếp tục chạy lệnh này để mở hardhat console thực hiện việc 
 Trong hardhat console chạy lần lượt, nhớ thay thế <> bằng address vừa hiện ra ở bên trên.
 
 ```
-
+const SimpleERC721 = await ethers.getContractFactory('SimpleERC721');
+const contract = await SimpleERC721.attach('<contract address>');
+await contract.newItem('dummy');
 ```
 
 Thấy vầy là OK:
 
-[![](https://raudangdat.files.wordpress.com/2022/01/hardhat-contract-deploy.png?w=1011)](https://raudangdat.files.wordpress.com/2022/01/hardhat-contract-deploy.png)
+![](https://raudangdat.files.wordpress.com/2022/01/hardhat-contract-deploy.png?w=1011)
 
 Quay lại MetaMask sẽ thấy đã tốn:
 
-[![](https://raudangdat.files.wordpress.com/2022/01/metamask-localhost8545.png?w=432)](https://raudangdat.files.wordpress.com/2022/01/metamask-localhost8545.png)
+![](https://raudangdat.files.wordpress.com/2022/01/metamask-localhost8545.png?w=432)
 
 Nếu nhìn trên terminal 1 (server) cũng sẽ thấy các thông tin thế này
 
-[![](https://raudangdat.files.wordpress.com/2022/01/hardhat-server-terminal.png?w=1024)](https://raudangdat.files.wordpress.com/2022/01/hardhat-server-terminal.png)
+![](https://raudangdat.files.wordpress.com/2022/01/hardhat-server-terminal.png?w=1024)
 
 ### Chạy thử trên Ethereum Ropsten Testnet
 
@@ -214,8 +216,8 @@ Trường hợp lỗi liên quan đến vue-cli-service thì cài thêm dependen
 
 Thấy báo địa chỉ Local với Network là OK, lấy browser mở ra vầy là coi như OK lần 2.
 
-[![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png?w=650)](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png)
+![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png?w=650)
 
-Anh Dũng. Photo by [Shubham Dhage](https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blockchain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+[Anh Dũng](https://anhdung.me/). Photo by [Shubham Dhage](https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blockchain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 <!--EndFragment-->
