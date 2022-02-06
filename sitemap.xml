@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/</loc>
-    <lastmod>2022-01-16</lastmod>
+    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <lastmod>2022-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <loc>https://cecilapp.github.io/the-butler/blog/trien-khai-giai-phap-nfts-marketplace-tren-ha-tang-aws-sieu-nhanh/</loc>
+    <lastmod>2022-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/</loc>
     <lastmod>2022-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
