@@ -185,11 +185,14 @@ Phần này nằm trong thư mục /marketplace.
 
 Chuyển vô thư mục /marketplace rồi set các biến môi trường như bên dưới.
 
-|     |     |
-| --- | --- |
-|     |     |
-
-Nhớ thay giá trị Output ở phần Deploy API vô mấy cái biến ở trên, để ý bỏ hai dấu < > luôn nhe. <region> The region you deployed your stack in previous steps <api-endpoint> NftApiEndpoint output from Deploy API <user-pool> UserPoolId output from Deploy API <web-client> UserPoolClientId output from Deploy API
+```
+cat <<EOF > .env.local
+VUE_APP_AWS_REGION=<region>
+VUE_APP_API_ENDPOINT=<api-endpoint>
+VUE_APP_USER_POOL_ID=<user-pool>
+VUE_APP_USER_POOL_WEB_CLIENT_ID=<web-client>
+EOF
+```
 
 `sudo npm install`
 
@@ -214,7 +217,5 @@ Thấy báo địa chỉ Local với Network là OK, lấy browser mở ra vầy
 [![](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png?w=650)](https://raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.png)
 
 Photo by [Shubham Dhage](https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blockchain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-
 
 <!--EndFragment-->
