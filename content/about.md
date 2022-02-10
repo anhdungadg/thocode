@@ -8,6 +8,8 @@ draft: false
 ---
 > Code gì cũng được, miễn có lương thiện là được!
 
+![contact email](https://services.nexodyne.com/email/icon/tMptjJ8Fd83S4dg%3D/KJ.h6tk%3D/R01haWw%3D/0/image.png)
+
 ```typescript
 using Life;
 public class AlgorithmOfSuccess {
