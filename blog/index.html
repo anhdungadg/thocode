@@ -87,6 +87,28 @@
       <div class="posts">
         <div class="post">
           <h1 class="post-title">
+            <a href="https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/">AWS Sample IoT Data Generator</a>
+          </h1>
+          <span class="post-date">11 Mar 2022</span>
+          <!--StartFragment-->
+<p>Có một cái ví dụ về việc giả lập dữ liệu IoT bắn ra từ các thiết bị ở đây: <a href="https://github.com/aws-samples/sbs-iot-data-generator">https://github.com/aws-samples/sbs-iot-data-generator</a></p>
+<p>Mới đọc qua thì cũng hay, và thấy chỉ có duy nhất 1 file .py nên nghĩ là ale hấp cứ download về rồi chạy python <a href="http://filename.py">filename.py</a> là OK thôi, ai dè cũng lắm truân chuyên. Nên thôi lỡ rồi cũng gui lại đây để sau này tiện copy khi có cần nữa.</p>
+<p>Mình triển khai trên Ubuntu 20.04.4 LTS, cần có những thứ này để tiếp tục:</p>
+<ul>
+<li>Amazon Web Services account: để lấy Access keys (access key ID and secret access key)</li>
+<li>AWS Command Line Interface (CLI): chạy lệnh <code>aws configure</code> rồi điền các thông tin cần thiết, bao gồm Access key ở trên.</li>
+<li>Python: phiên bản 2.7.18, giờ cài phiên bản 3.x chạy source này báo lỗi <code>SyntaxError: Missing parentheses in call to 'print'. Did you mean print(data)?</code></li>
+<li>Pip2:</li>
+</ul>
+<p><code>sudo add-apt-repository universe sudo apt update curl &lt;https://bootstrap.pypa.io/pip/2.7/get-pip.py&gt; --output get-pip.py # Fetch get-pip.py for python 2.7 python2 get-pip.py pip2 --version</code></p>
+<ul>
+<li>boto3: <a href="https://aws.amazon.com/sdk-for-python/"></a><a href="https://aws.amazon.com/sdk-for-python/">https://aws.amazon.com/sdk-for-python/</a>, cài xong pip2 thì chạy <code>pip2 install boto3</code></li>
+</ul>
+<p>Sau khi setup xong thì chạy <code>python2 sbs.py</code> thôi.</p>
+<!--EndFragment-->
+        </div>
+        <div class="post">
+          <h1 class="post-title">
             <a href="https://cecilapp.github.io/the-butler/blog/trien-khai-giai-phap-nfts-marketplace-tren-ha-tang-aws-sieu-nhanh/">Triển khai giải pháp NFTs Marketplace trên hạ tầng AWS siêu nhanh</a>
           </h1>
           <span class="post-date">6 Feb 2022</span>
@@ -125,13 +147,6 @@
           </h1>
           <span class="post-date">9 Jan 2022</span>
           <p>Tui đẻ ra ở thời Web 1.0 rồi lớn lên đi mần, kiếm ăn nhờ Web 2.0, bây giờ là kỷ nguyên Web 3.0 của metaverse gì gì đó nên tui rất có niềm tin vào mọi thứ sẽ được “trực tuyến hóa” một cách tuyệt vời. Nhưng rồi sau trải nghiệm tồi tệ lần đầu tiên, cũng như thấy được cơ số chuyện ba trợn xảy đến với mọi người nên thôi tui quyết định quay về với truyền thống, đăng ký thi ở Testing Center…</p>
-        </div>
-        <div class="post">
-          <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/princess-mononoke/">Thử nghiệm Princess Mononoke</a>
-          </h1>
-          <span class="post-date">9 Mar 2020</span>
-          <p><strong><em>Princess Mononoke</em></strong> (<a href="https://en.m.wikipedia.org/wiki/Japanese_language">Japanese</a>: もののけ姫 <a href="https://en.m.wikipedia.org/wiki/Hepburn_romanization">Hepburn</a>: <strong>Mononoke-<a href="https://en.m.wikipedia.org/wiki/Hime">hime</a></strong>, &quot;Spirit/Monster Princess&quot;) is a 1997 Japanese <a href="https://en.m.wikipedia.org/wiki/Anime">animated</a> <a href="https://en.m.wikipedia.org/wiki/Fantasy_film">fantasy film</a> written and directed by <a href="https://en.m.wikipedia.org/wiki/Hayao_Miyazaki">Hayao Miyazaki</a>, animated by <a href="https://en.m.wikipedia.org/wiki/Studio_Ghibli">Studio Ghibli</a> for <a href="https://en.m.wikipedia.org/wiki/Tokuma_Shoten">Tokuma Shoten</a>, <a href="https://en.m.wikipedia.org/wiki/Nippon_Television_Network">Nippon Television Network</a> and <a href="https://en.m.wikipedia.org/wiki/Dentsu">Dentsu</a>, and distributed by <a href="https://en.m.wikipedia.org/wiki/Toho">Toho</a>. The film stars the voices of <a href="https://en.m.wikipedia.org/wiki/Yōji_Matsuda">Yōji Matsuda</a>, <a href="https://en.m.wikipedia.org/wiki/Yuriko_Ishida">Yuriko Ishida</a>, <a href="https://en.m.wikipedia.org/wiki/Yūko_Tanaka">Yūko Tanaka</a>, <a href="https://en.m.wikipedia.org/wiki/Kaoru_Kobayashi_(actor)">Kaoru Kobayashi</a>, <a href="https://en.m.wikipedia.org/wiki/Masahiko_Nishimura">Masahiko Nishimura</a>, <a href="https://en.m.wikipedia.org/wiki/Tsunehiko_Kamijo">Tsunehiko Kamijo</a>, <a href="https://en.m.wikipedia.org/wiki/Akihiro_Miwa">Akihiro Miwa</a>, <a href="https://en.m.wikipedia.org/wiki/Mitsuko_Mori">Mitsuko Mori</a> and <a href="https://en.m.wikipedia.org/wiki/Hisaya_Morishige">Hisaya Morishige</a>.</p>
         </div>
       </div>
       <div class="pagination">
