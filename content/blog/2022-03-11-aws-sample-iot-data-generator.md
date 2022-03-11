@@ -7,7 +7,7 @@ tags:
   - python2
   - pip2
   - iot
-draft: true
+draft: false
 ---
 <!--StartFragment-->
 
