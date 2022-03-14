@@ -28,4 +28,6 @@ Mình triển khai trên Ubuntu 20.04.4 LTS, cần có những thứ này để 
 
 Sau khi setup xong thì chạy `python2 sbs.py` thôi.
 
+**Phong Vân**
+
 <!--EndFragment-->
