@@ -16,7 +16,7 @@
     <content type="html">
       <![CDATA[<!--StartFragment-->
 <p>Có một cái ví dụ về việc giả lập dữ liệu IoT bắn ra từ các thiết bị ở đây: <a href="https://github.com/aws-samples/sbs-iot-data-generator">https://github.com/aws-samples/sbs-iot-data-generator</a></p>
-<p>Mới đọc qua thì cũng hay, và thấy chỉ có duy nhất 1 file .py nên nghĩ là ale hấp cứ download về rồi chạy python <a href="http://filename.py">filename.py</a> là OK thôi, ai dè cũng lắm truân chuyên. Nên thôi lỡ rồi cũng gui lại đây để sau này tiện copy khi có cần nữa.</p>
+<p>Mới đọc qua thì cũng hay, và thấy chỉ có duy nhất 1 file .py nên nghĩ là ale hấp cứ download về rồi chạy python <em>filename.py</em> là OK thôi, ai dè cũng lắm truân chuyên. Nên thôi lỡ rồi cũng gui lại đây để sau này tiện copy khi có cần nữa.</p>
 <p>Mình triển khai trên Ubuntu 20.04.4 LTS, cần có những thứ này để tiếp tục:</p>
 <ul>
 <li>Amazon Web Services account: để lấy Access keys (access key ID and secret access key)</li>
