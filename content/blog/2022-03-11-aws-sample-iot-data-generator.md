@@ -13,7 +13,7 @@ draft: false
 
 Có một cái ví dụ về việc giả lập dữ liệu IoT bắn ra từ các thiết bị ở đây: <https://github.com/aws-samples/sbs-iot-data-generator>
 
-Mới đọc qua thì cũng hay, và thấy chỉ có duy nhất 1 file .py nên nghĩ là ale hấp cứ download về rồi chạy python [filename.py](http://filename.py) là OK thôi, ai dè cũng lắm truân chuyên. Nên thôi lỡ rồi cũng gui lại đây để sau này tiện copy khi có cần nữa.
+Mới đọc qua thì cũng hay, và thấy chỉ có duy nhất 1 file .py nên nghĩ là ale hấp cứ download về rồi chạy python *filename.py* là OK thôi, ai dè cũng lắm truân chuyên. Nên thôi lỡ rồi cũng gui lại đây để sau này tiện copy khi có cần nữa.
 
 Mình triển khai trên Ubuntu 20.04.4 LTS, cần có những thứ này để tiếp tục:
 
