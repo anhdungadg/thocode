@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://cecilapp.github.io/the-butler/tags/wget/</id>
+  <title>Thợ Code - wget</title>
+  <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
+  <link href="https://cecilapp.github.io/the-butler/tags/wget/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://cecilapp.github.io/the-butler/tags/wget/" rel="alternate" type="text/html" />
+  <updated>2022-03-17T03:43:07+01:00</updated>
+  <author>
+    <name>Thợ Code</name>
+    <uri>https://cecilapp.github.io/the-butler/</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/</id>
+    <title>Làm sao để Google Chrome auto update trên Ubuntu</title>
+    <content type="html">
+      <![CDATA[<p>First you have to install the key. This can be done by opening Terminal and typing</p>
+<p><code>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -</code></p>
+<p>Step two is to add the repository</p>
+<p><code>sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</code></p>
+<p>Then you update and, if you haven't already, install Google Chrome</p>
+<p><code>sudo apt-get update sudo apt-get install google-chrome-stable</code></p>
+<p><strong>Phong Vân</strong></p>]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/" rel="alternate" type="text/html" />
+    <published>2022-03-17T03:43:07+01:00</published>
+    <updated>2022-03-17T03:43:07+01:00</updated>
+  </entry>
+</feed>

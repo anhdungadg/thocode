@@ -27,18 +27,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>FPS &middot; Thợ Code</title>
+    <title>wget &middot; Thợ Code</title>
     <meta name="description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="keywords" content="ThoCode 1.1, Thợ Code, Nghề lập trình, Code mướn, Code Monkey, Software Engineer, Software Developer, Career path, Cloud, Web3, Blockchain, Metaverse, Cryptocurrency" />
     <meta name="author" content="ThoCode Team" />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" type="text/html" title="FPS &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/fps/" />
-    <link rel="alternate" type="application/atom+xml" title="FPS &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/fps/atom.xml" />
+    <link rel="canonical" type="text/html" title="wget &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/wget/" />
+    <link rel="alternate" type="application/atom+xml" title="wget &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/wget/atom.xml" />
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/google/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/chrome/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/update/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/ubuntu/">
-    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/wget/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/apt-get/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/aws/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/cli/">
@@ -67,14 +66,15 @@
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/music/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/electronic/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/video-games/">
-    <link rel="alternate" hreflang="x-default" href="https://cecilapp.github.io/the-butler/tags/fps/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/fps/">
+    <link rel="alternate" hreflang="x-default" href="https://cecilapp.github.io/the-butler/tags/wget/">
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Thợ Code" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="FPS &middot; Thợ Code" />
+    <meta property="og:title" content="wget &middot; Thợ Code" />
     <meta property="og:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta property="og:url" content="https://cecilapp.github.io/the-butler/tags/fps/" />
-    <meta name="twitter:title" content="FPS &middot; Thợ Code" />
+    <meta property="og:url" content="https://cecilapp.github.io/the-butler/tags/wget/" />
+    <meta name="twitter:title" content="wget &middot; Thợ Code" />
     <meta name="twitter:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="twitter:card" content="summary" />
 
@@ -118,10 +118,16 @@
       <div class="posts">
         <div class="post">
           <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/doom/">Doom</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a>
           </h1>
-          <span class="post-date">14 Dec 2019</span>
-          <p><strong><em>Doom</em></strong> (stylized as <strong><em>DOOM</em></strong> or <strong><em>DooM</em></strong> in other media) is a 1993 <a href="https://en.m.wikipedia.org/wiki/First-person_shooter">first-person shooter</a> developed and published by <a href="https://en.m.wikipedia.org/wiki/Id_Software">id Software</a> for <a href="https://en.m.wikipedia.org/wiki/MS-DOS">MS-DOS</a>. Players assume the role of a <a href="https://en.m.wikipedia.org/wiki/Space_marine">space marine</a>, popularly known as &quot;<a href="https://en.m.wikipedia.org/wiki/Doomguy">Doomguy</a>&quot;, fighting his way through hordes of invading <a href="https://en.m.wikipedia.org/wiki/Demon">demons</a> from <a href="https://en.m.wikipedia.org/wiki/Hell">Hell</a>. The first episode, comprising nine levels, was distributed freely as <a href="https://en.m.wikipedia.org/wiki/Shareware">shareware</a> and played by an estimated 15–20 million people within two years; the full game, with two further episodes, was sold via <a href="https://en.m.wikipedia.org/wiki/Mail_order">mail order</a>. An updated version with an additional episode, <em>Ultimate Doom</em>, was released in 1995 and sold at retail.</p>
+          <span class="post-date">17 Mar 2022</span>
+          <p>First you have to install the key. This can be done by opening Terminal and typing</p>
+<p><code>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -</code></p>
+<p>Step two is to add the repository</p>
+<p><code>sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</code></p>
+<p>Then you update and, if you haven't already, install Google Chrome</p>
+<p><code>sudo apt-get update sudo apt-get install google-chrome-stable</code></p>
+<p><strong>Phong Vân</strong></p>
         </div>
       </div>
     </div>

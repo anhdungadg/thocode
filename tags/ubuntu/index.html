@@ -34,6 +34,11 @@
     <meta name="robots" content="index,follow" />
     <link rel="canonical" type="text/html" title="ubuntu &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/ubuntu/" />
     <link rel="alternate" type="application/atom+xml" title="ubuntu &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/ubuntu/atom.xml" />
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/google/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/chrome/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/update/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/wget/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/apt-get/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/aws/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/cli/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/python2/">
@@ -111,6 +116,19 @@
     </div>
     <div class="content container">
       <div class="posts">
+        <div class="post">
+          <h1 class="post-title">
+            <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a>
+          </h1>
+          <span class="post-date">17 Mar 2022</span>
+          <p>First you have to install the key. This can be done by opening Terminal and typing</p>
+<p><code>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -</code></p>
+<p>Step two is to add the repository</p>
+<p><code>sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</code></p>
+<p>Then you update and, if you haven't already, install Google Chrome</p>
+<p><code>sudo apt-get update sudo apt-get install google-chrome-stable</code></p>
+<p><strong>Phong Vân</strong></p>
+        </div>
         <div class="post">
           <h1 class="post-title">
             <a href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/">Cài đặt Node.js phiên bản &quot;mới nhất&quot; trên Ubuntu WSL2</a>

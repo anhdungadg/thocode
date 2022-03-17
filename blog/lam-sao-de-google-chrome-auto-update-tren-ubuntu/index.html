@@ -27,23 +27,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được!</title>
+    <title>Làm sao để Google Chrome auto update trên Ubuntu &middot; Thợ Code</title>
     <meta name="description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta name="keywords" content="ThoCode 1.1, Thợ Code, Nghề lập trình, Code mướn, Code Monkey, Software Engineer, Software Developer, Career path, Cloud, Web3, Blockchain, Metaverse, Cryptocurrency" />
+    <meta name="keywords" content="google, chrome, update, ubuntu, wget, apt-get, ThoCode 1.1, Thợ Code, Nghề lập trình, Code mướn, Code Monkey, Software Engineer, Software Developer, Career path, Cloud, Web3, Blockchain, Metaverse, Cryptocurrency" />
     <meta name="author" content="ThoCode Team" />
     <meta name="robots" content="index,follow" />
-    <link rel="first" href="https://cecilapp.github.io/the-butler/">
-    <link rel="next" href="https://cecilapp.github.io/the-butler/page/2/">
-    <link rel="last" href="https://cecilapp.github.io/the-butler/page/2/">
-    <link rel="canonical" type="text/html" title="Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được!" href="https://cecilapp.github.io/the-butler/" />
-    <link rel="alternate" type="application/atom+xml" title="Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được! (ATOM)" href="https://cecilapp.github.io/the-butler/atom.xml" />
+    <link rel="prev" href="https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/">
+    <link rel="canonical" type="text/html" title="Làm sao để Google Chrome auto update trên Ubuntu &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Thợ Code" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Làm sao để Google Chrome auto update trên Ubuntu &middot; Thợ Code" />
     <meta property="og:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta property="og:url" content="https://cecilapp.github.io/the-butler/" />
-    <meta name="twitter:title" content="Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được!" />
+    <meta property="og:url" content="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/" />
+    <meta name="twitter:title" content="Làm sao để Google Chrome auto update trên Ubuntu &middot; Thợ Code" />
     <meta name="twitter:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="twitter:card" content="summary" />
 
@@ -76,7 +73,7 @@
           <p class="lead">Tiếng nói của giai cấp Công nhân Lập trình</p>
         </div>
         <nav class="sidebar-nav">
-          <a class="sidebar-nav-item active item-weight-0" href="https://cecilapp.github.io/the-butler/">Home</a>
+          <a class="sidebar-nav-item item-weight-0" href="https://cecilapp.github.io/the-butler/">Home</a>
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
@@ -84,32 +81,64 @@
       </div>
     </div>
     <div class="content container">
-      <div class="posts">
-        <div class="post">
-          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a></h1>
-          <span class="post-date">17 Mar 2022</span>
-          <p>First you have to install the key. This can be done by opening Terminal and typing</p>
+      <h1 class="page-title">Làm sao để Google Chrome auto update trên Ubuntu</h1>
+      <span class="post-date">17 Mar 2022</span>
+      <p>First you have to install the key. This can be done by opening Terminal and typing</p>
 <p><code>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -</code></p>
 <p>Step two is to add the repository</p>
 <p><code>sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</code></p>
 <p>Then you update and, if you haven't already, install Google Chrome</p>
 <p><code>sudo apt-get update sudo apt-get install google-chrome-stable</code></p>
 <p><strong>Phong Vân</strong></p>
-          <footer class="readmore">
-            <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/#more">Read more ›</a>
-          </footer>
-        </div>
-      </div>
-      <div class="lastposts">
-        <h2>Recent posts</h2>
-        <ul>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/">AWS Sample IoT Data Generator</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/trien-khai-giai-phap-nfts-marketplace-tren-ha-tang-aws-sieu-nhanh/">Triển khai giải pháp NFTs Marketplace trên hạ tầng AWS siêu nhanh</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/">Cài đặt Node.js phiên bản "mới nhất" trên Ubuntu WSL2</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/kinh-nghiem-thi-aws-certified-solutions-architect-associate-saa-c02/">Kinh nghiệm thi AWS Certified Solutions Architect – Associate (SAA-C02)</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/trai-nghiem-dang-ky-pearson-vue-online-proctor-thi-aws/">Trải nghiệm đăng ký Pearson VUE Online Proctor thi AWS</a></li>
-        </ul>
-      </div>
+      <p>
+        <a href="https://cecilapp.github.io/the-butler/tags/google/">#google</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/chrome/">#chrome</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/update/">#update</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/ubuntu/">#ubuntu</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/wget/">#wget</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/apt-get/">#apt-get</a>&nbsp;
+      </p>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = 'https://thocode.net';  
+        
+        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.identifier = 'Làm sao để Google Chrome auto update trên Ubuntu'; 
+    };
+    */
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://thocode.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
     </div>
   </body>
 </html>

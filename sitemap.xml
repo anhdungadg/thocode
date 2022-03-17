@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/</loc>
-    <lastmod>2022-03-11</lastmod>
+    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <lastmod>2022-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <loc>https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/</loc>
+    <lastmod>2022-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/</loc>
     <lastmod>2022-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
