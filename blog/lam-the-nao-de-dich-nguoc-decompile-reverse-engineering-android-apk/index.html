@@ -1,0 +1,142 @@
+
+<!-- Đức Phật nơi đây xin phù hộ code con chạy không Bug. Nam mô a di đà Phật.
+                           _
+                        _ooOoo_
+                       o8888888o
+                       88" . "88
+                       (| -_- |)
+                       O\  =  /O
+                    ____/`---'\____
+                  .'  \\|     |//  `.
+                 /  \\|||  :  |||//  \
+                /  _||||| -:- |||||_  \
+                |   | \\\  -  /'| |   |
+                | \_|  `\`---'//  |_/ |
+                \  .-\__ `-. -'__/-.  /
+              ___`. .'  /--.--\  `. .'___
+           ."" '<  `.___\_<|>_/___.' _> \"".
+          | | :  `- \`. ;`. _/; .'/ /  .' ; |
+          \  \ `-.   \_\_`. _.'_/_/  -' _.' /
+===========`-.`___`-.__\ \___  /__.-'_.'_.-'================
+                        `=--=-'                    kimcang -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+  <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK &middot; Thợ Code</title>
+    <meta name="description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
+    <meta name="keywords" content="apktool, decompile, reverse, engineering, ThoCode 1.1, Thợ Code, Nghề lập trình, Code mướn, Code Monkey, Software Engineer, Software Developer, Career path, Cloud, Web3, Blockchain, Metaverse, Cryptocurrency" />
+    <meta name="author" content="ThoCode Team" />
+    <meta name="robots" content="index,follow" />
+    <link rel="prev" href="https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/">
+    <link rel="canonical" type="text/html" title="Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Thợ Code" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK &middot; Thợ Code" />
+    <meta property="og:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
+    <meta property="og:url" content="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/" />
+    <meta name="twitter:title" content="Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK &middot; Thợ Code" />
+    <meta name="twitter:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cecilapp.github.io/the-butler/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://cecilapp.github.io/the-butler/favicon.ico">
+    <link rel="stylesheet" href="https://cecilapp.github.io/the-butler/styles.eb5057fc511d5020f6f3ff77f5f045a7.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <link rel="stylesheet" href="https://cecilapp.github.io/the-butler/css/monokai-sublime.0c8b4c0e8a584e7142b08d914644cd9d.min.css">
+    <script src="https://cecilapp.github.io/the-butler/js/highlight-9.13.1.min.2fa064f94c70848f3999ad3402ca49c8.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44WW52V9QR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44WW52V9QR');
+</script>
+
+    <meta name="generator" content="Cecil 5.91.0" />
+  </head>
+  <body class="">
+    <div class="sidebar">
+      <div class="container  sidebar-sticky">
+        <div class="sidebar-about">
+          <h1>
+            <a href="https://cecilapp.github.io/the-butler/">Thợ Code</a>
+          </h1>
+          <p class="lead">Tiếng nói của giai cấp Công nhân Lập trình</p>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item item-weight-0" href="https://cecilapp.github.io/the-butler/">Home</a>
+          <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
+          <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
+        </nav>
+        <p>Powered by <a href="https://cecil.app/#5.91.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+      </div>
+    </div>
+    <div class="content container">
+      <h1 class="page-title">Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK</h1>
+      <span class="post-date">3 Apr 2022</span>
+      <!--StartFragment-->
+<p>Có nhiều lý do để phải decompile một file APK trên Android, nếu bạn cần thì theo các bước sau đây và chỉ với 3 câu lệnh là xong.</p>
+<p>Vì các tool này đều viết bằng Java nên đầu tiên là cài đặt Java 8, trang chủ <a href="https://www.java.com/en/"></a><a href="https://www.java.com/en/">https://www.java.com/en/</a> mấy chục năm rồi vẫn thế, chả có thay đổi gì. Trên Windows nếu cài xong mà chạy lệnh java -version không có gì thì nhớ thêm Path đến folder cài java trong System environment variables.</p>
+<p>Xong rồi thì tải apktool về, coi hướng dẫn chi tiết trong này <a href="https://ibotpeaches.github.io/Apktool/install/"></a><a href="https://ibotpeaches.github.io/Apktool/install/">https://ibotpeaches.github.io/Apktool/install/</a>. Không nhất thiết phải move vào C:\Windows hay /usr/local/bin chi đâu, vẫn có thể chạy lệnh apktool từ chỗ khác được.</p>
+<p>Sau khi đã rebuild file APK bằng lệnh thì chúng ta cần sign APK này mới có thể đem cài trên thiết bị được, tải nguyên cục này về <a href="https://github.com/techexpertize/SignApk"></a><a href="https://github.com/techexpertize/SignApk">https://github.com/techexpertize/SignApk</a>.</p>
+<p><strong>Nhiếp Phong</strong></p>
+<!--EndFragment-->
+      <p>
+        <a href="https://cecilapp.github.io/the-butler/tags/apktool/">#apktool</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/decompile/">#decompile</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/reverse/">#reverse</a>&nbsp;
+        <a href="https://cecilapp.github.io/the-butler/tags/engineering/">#engineering</a>&nbsp;
+      </p>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = 'https://thocode.net';  
+        
+        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.identifier = 'Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK'; 
+    };
+    */
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://thocode.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+    </div>
+  </body>
+</html>

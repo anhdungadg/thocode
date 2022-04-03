@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <lastmod>2022-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <loc>https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/</loc>
     <lastmod>2022-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
