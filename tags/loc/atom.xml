@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://cecilapp.github.io/the-butler/tags/loc/</id>
+  <title>Thợ Code - loc</title>
+  <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
+  <link href="https://cecilapp.github.io/the-butler/tags/loc/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://cecilapp.github.io/the-butler/tags/loc/" rel="alternate" type="text/html" />
+  <updated>2022-04-05T04:03:25+02:00</updated>
+  <author>
+    <name>Thợ Code</name>
+    <uri>https://cecilapp.github.io/the-butler/</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/</id>
+    <title>Đếm số dòng code (Line of Code, LOC)</title>
+    <content type="html">
+      <![CDATA[<p>Nếu xài Visual Studio thì có cái tool Calculate Code Metrics trong menu Analyze.</p>
+<p>Hoặc không thì mở Power Shell lên cd vô folder cần đếm rồi chạy, nhớ thêm/ xóa mấy cái file ext cần thiết nha.</p>
+<p><code>(gci -include</code><em><code>.cs,</code></em></p>]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/" rel="alternate" type="text/html" />
+    <published>2022-04-05T04:03:25+02:00</published>
+    <updated>2022-04-05T04:03:25+02:00</updated>
+  </entry>
+</feed>
