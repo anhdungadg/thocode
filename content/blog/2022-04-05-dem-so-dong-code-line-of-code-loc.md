@@ -7,7 +7,7 @@ tags:
   - code
   - count
   - analyze
-draft: true
+draft: false
 ---
 Nếu xài Visual Studio thì có cái tool Calculate Code Metrics trong menu Analyze.
 
