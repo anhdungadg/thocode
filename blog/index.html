@@ -87,6 +87,28 @@
       <div class="posts">
         <div class="post">
           <h1 class="post-title">
+            <a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a>
+          </h1>
+          <span class="post-date">6 Apr 2022</span>
+          <p>C# cho phép dùng operator với Class, Struct</p>
+<pre><code class="language-csharp">public struct Complex
+        {
+            public double Real { get; set; }
+            public double Imaginary { get; set; }
+
+            public static Complex operator +(Complex c1, Complex c2)
+            {
+                return new Complex
+                {
+                    Real = c1.Real + c2.Real,
+                    Imaginary = c1.Imaginary + c2.Imaginary
+                };
+            }
+        }</code></pre>
+<p><strong>Nhiếp Phong</strong></p>
+        </div>
+        <div class="post">
+          <h1 class="post-title">
             <a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/">Đếm số dòng code (Line of Code, LOC)</a>
           </h1>
           <span class="post-date">5 Apr 2022</span>
@@ -128,29 +150,6 @@
 <p>Then you update and, if you haven't already, install Google Chrome</p>
 <p><code>sudo apt-get update sudo apt-get install google-chrome-stable</code></p>
 <p><strong>Phong Vân</strong></p>
-        </div>
-        <div class="post">
-          <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/">AWS Sample IoT Data Generator</a>
-          </h1>
-          <span class="post-date">11 Mar 2022</span>
-          <!--StartFragment-->
-<p>Có một cái ví dụ về việc giả lập dữ liệu IoT bắn ra từ các thiết bị ở đây: <a href="https://github.com/aws-samples/sbs-iot-data-generator">https://github.com/aws-samples/sbs-iot-data-generator</a></p>
-<p>Mới đọc qua thì cũng hay, và thấy chỉ có duy nhất 1 file .py nên nghĩ là ale hấp cứ download về rồi chạy python <em>filename.py</em> là OK thôi, ai dè cũng lắm truân chuyên. Nên thôi lỡ rồi cũng gui lại đây để sau này tiện copy khi có cần nữa.</p>
-<p>Mình triển khai trên Ubuntu 20.04.4 LTS, cần có những thứ này để tiếp tục:</p>
-<ul>
-<li>Amazon Web Services account: để lấy Access keys (access key ID and secret access key)</li>
-<li>AWS Command Line Interface (CLI): chạy lệnh <code>aws configure</code> rồi điền các thông tin cần thiết, bao gồm Access key ở trên.</li>
-<li>Python: phiên bản 2.7.18, giờ cài phiên bản 3.x chạy source này báo lỗi <code>SyntaxError: Missing parentheses in call to 'print'. Did you mean print(data)?</code></li>
-<li>Pip2:</li>
-</ul>
-<p><code>sudo add-apt-repository universe sudo apt update curl &lt;https://bootstrap.pypa.io/pip/2.7/get-pip.py&gt; --output get-pip.py # Fetch get-pip.py for python 2.7 python2 get-pip.py pip2 --version</code></p>
-<ul>
-<li>boto3: <a href="https://aws.amazon.com/sdk-for-python/"></a><a href="https://aws.amazon.com/sdk-for-python/">https://aws.amazon.com/sdk-for-python/</a>, cài xong pip2 thì chạy <code>pip2 install boto3</code></li>
-</ul>
-<p>Sau khi setup xong thì chạy <code>python2 sbs.py</code> thôi.</p>
-<p><strong>Phong Vân</strong></p>
-<!--EndFragment-->
         </div>
       </div>
       <div class="pagination">

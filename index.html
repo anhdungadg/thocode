@@ -86,24 +86,37 @@
     <div class="content container">
       <div class="posts">
         <div class="post">
-          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/">Đếm số dòng code (Line of Code, LOC)</a></h1>
-          <span class="post-date">5 Apr 2022</span>
-          <p>Nếu xài Visual Studio thì có cái tool Calculate Code Metrics trong menu Analyze.</p>
-<p>Hoặc không thì mở Power Shell lên cd vô folder cần đếm rồi chạy, nhớ thêm/ xóa mấy cái file ext cần thiết nha.</p>
-<p><code>(gci -include</code><em><code>.cs,</code></em></p>
+          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a></h1>
+          <span class="post-date">6 Apr 2022</span>
+          <p>C# cho phép dùng operator với Class, Struct</p>
+<pre><code class="language-csharp">public struct Complex
+        {
+            public double Real { get; set; }
+            public double Imaginary { get; set; }
+
+            public static Complex operator +(Complex c1, Complex c2)
+            {
+                return new Complex
+                {
+                    Real = c1.Real + c2.Real,
+                    Imaginary = c1.Imaginary + c2.Imaginary
+                };
+            }
+        }</code></pre>
+<p><strong>Nhiếp Phong</strong></p>
           <footer class="readmore">
-            <a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/#more">Read more ›</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/#more">Read more ›</a>
           </footer>
         </div>
       </div>
       <div class="lastposts">
         <h2>Recent posts</h2>
         <ul>
+          <li><a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/">Đếm số dòng code (Line of Code, LOC)</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/">Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/">Taskbar Windows 10 trên Win11</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/">AWS Sample IoT Data Generator</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/trien-khai-giai-phap-nfts-marketplace-tren-ha-tang-aws-sieu-nhanh/">Triển khai giải pháp NFTs Marketplace trên hạ tầng AWS siêu nhanh</a></li>
         </ul>
       </div>
     </div>
