@@ -16,7 +16,7 @@
     <content type="html">
       <![CDATA[<p>Nếu xài Visual Studio thì có cái tool Calculate Code Metrics trong menu Analyze.</p>
 <p>Hoặc không thì mở Power Shell lên cd vô folder cần đếm rồi chạy, nhớ thêm/ xóa mấy cái file ext cần thiết nha.</p>
-<p><code>(gci -include</code><em><code>.cs,</code></em></p>]]>
+<p><strong><em>(gci -include .cs,.xaml,.js,.cshtml -recurse | select-string .).Count</em></strong></p>]]>
     </content>
     <link href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/" rel="alternate" type="text/html" />
     <published>2022-04-05T04:03:25+02:00</published>
