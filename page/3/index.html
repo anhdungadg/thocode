@@ -65,7 +65,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.92.0" />
+    <meta name="generator" content="Cecil 5.95.0" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -81,43 +81,35 @@
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.92.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.95.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
       <div class="posts">
         <div class="post">
-          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a></h1>
-          <span class="post-date">6 Apr 2022</span>
-          <p>C# cho phép dùng operator với Class, Struct</p>
-<pre><code class="language-csharp">public struct Complex
-        {
-            public double Real { get; set; }
-            public double Imaginary { get; set; }
-
-            public static Complex operator +(Complex c1, Complex c2)
-            {
-                return new Complex
-                {
-                    Real = c1.Real + c2.Real,
-                    Imaginary = c1.Imaginary + c2.Imaginary
-                };
-            }
-        }</code></pre>
-<p><strong>Nhiếp Phong</strong></p>
+          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/">Some tricks with NET 6.0</a></h1>
+          <span class="post-date">6 May 2022</span>
+          <img src="https://cecilapp.github.io/the-butler/" />
+          <p>IDE: Visual Studio 2022</p>
+<h1 id="hide-warning-code">Hide Warning Code</h1>
+<p>Open .csproject file, add this line below into the <code>&lt;PropertyGroup&gt;</code></p>
+<p><code>&lt;NoWarn&gt;$(NoWarn);1591&lt;/NoWarn&gt;</code></p>
+<p>In there: 1591 is the Code show in Error List</p>
+<p><img src="/images/screenshot-2022-05-06-123556.e2982249e3e054db02f40028be9a16dd.png" alt="" loading="lazy" width="258" height="223" /></p>
+<p><strong>Hư Trúc</strong></p>
           <footer class="readmore">
-            <a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/#more">Read more ›</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/#more">Read more ›</a>
           </footer>
         </div>
       </div>
       <div class="lastposts">
         <h2>Recent posts</h2>
         <ul>
+          <li><a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/">Đếm số dòng code (Line of Code, LOC)</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/">Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/">Taskbar Windows 10 trên Win11</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/aws-sample-iot-data-generator/">AWS Sample IoT Data Generator</a></li>
         </ul>
       </div>
     </div>

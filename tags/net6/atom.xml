@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://cecilapp.github.io/the-butler/tags/net6/</id>
+  <title>Thợ Code - net6</title>
+  <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
+  <link href="https://cecilapp.github.io/the-butler/tags/net6/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://cecilapp.github.io/the-butler/tags/net6/" rel="alternate" type="text/html" />
+  <updated>2022-05-06T07:29:00+02:00</updated>
+  <author>
+    <name>Thợ Code</name>
+    <uri>https://cecilapp.github.io/the-butler/</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/</id>
+    <title>Some tricks with NET 6.0</title>
+    <content type="html">
+      <![CDATA[<p>IDE: Visual Studio 2022</p>
+<h1 id="hide-warning-code">Hide Warning Code</h1>
+<p>Open .csproject file, add this line below into the <code>&lt;PropertyGroup&gt;</code></p>
+<p><code>&lt;NoWarn&gt;$(NoWarn);1591&lt;/NoWarn&gt;</code></p>
+<p>In there: 1591 is the Code show in Error List</p>
+<p><img src="/images/screenshot-2022-05-06-123556.e2982249e3e054db02f40028be9a16dd.png" alt="" loading="lazy" width="258" height="223" /></p>
+<p><strong>Hư Trúc</strong></p>]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/" rel="alternate" type="text/html" />
+    <published>2022-05-06T07:29:00+02:00</published>
+    <updated>2022-05-06T07:29:00+02:00</updated>
+  </entry>
+</feed>

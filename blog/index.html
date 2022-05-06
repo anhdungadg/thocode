@@ -64,7 +64,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.92.0" />
+    <meta name="generator" content="Cecil 5.95.0" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -80,11 +80,24 @@
           <a class="sidebar-nav-item active item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.92.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.95.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
       <div class="posts">
+        <div class="post">
+          <h1 class="post-title">
+            <a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/">Some tricks with NET 6.0</a>
+          </h1>
+          <span class="post-date">6 May 2022</span>
+          <p>IDE: Visual Studio 2022</p>
+<h1 id="hide-warning-code">Hide Warning Code</h1>
+<p>Open .csproject file, add this line below into the <code>&lt;PropertyGroup&gt;</code></p>
+<p><code>&lt;NoWarn&gt;$(NoWarn);1591&lt;/NoWarn&gt;</code></p>
+<p>In there: 1591 is the Code show in Error List</p>
+<p><img src="/images/screenshot-2022-05-06-123556.e2982249e3e054db02f40028be9a16dd.png" alt="" loading="lazy" width="258" height="223" /></p>
+<p><strong>Hư Trúc</strong></p>
+        </div>
         <div class="post">
           <h1 class="post-title">
             <a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a>
@@ -136,19 +149,6 @@
           <span class="post-date">23 Mar 2022</span>
           <p>Windows 11 ngon lành nhưng mà taskbar hơi chán, nhất là với ai xài màn hình rộng, độ phân giải cao muốn nhanh chóng thì đâu có ai phải rê chuột vô group rồi mới click. Vậy mà chả hiểu sao MS lại giấu luôn cái chức năng ungroup.</p>
 <p>Có cái tool miễn phí ở đây <a href="https://github.com/valinet/ExplorerPatcher/releases">https://github.com/valinet/ExplorerPatcher/releases</a>, rất tuyệt vời, chỉ cần tải về rồi chạy file <em>ep_setup.exe</em> là xong.</p>
-<p><strong>Phong Vân</strong></p>
-        </div>
-        <div class="post">
-          <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a>
-          </h1>
-          <span class="post-date">17 Mar 2022</span>
-          <p>First you have to install the key. This can be done by opening Terminal and typing</p>
-<p><code>wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -</code></p>
-<p>Step two is to add the repository</p>
-<p><code>sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</code></p>
-<p>Then you update and, if you haven't already, install Google Chrome</p>
-<p><code>sudo apt-get update sudo apt-get install google-chrome-stable</code></p>
 <p><strong>Phong Vân</strong></p>
         </div>
       </div>
