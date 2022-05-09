@@ -5,11 +5,39 @@
   <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
   <link href="https://cecilapp.github.io/the-butler/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://cecilapp.github.io/the-butler/" rel="alternate" type="text/html" />
-  <updated>2022-05-06T07:29:00+02:00</updated>
+  <updated>2022-05-09T12:12:27+02:00</updated>
   <author>
     <name>Thợ Code</name>
     <uri>https://cecilapp.github.io/the-butler/</uri>
   </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/</id>
+    <title>Controller, ControllerBase, ApiController</title>
+    <content type="html">
+      <![CDATA[<!--StartFragment-->
+<p>Hồi đầu nhìn thấy có vẻ giống nhau, hơi lộn lẹo nên phải biên lại đây cho dễ nhớ.</p>
+<p>Bạn sẽ nhìn thấy 3 class này khi khởi tạo dự án WebAPI (là <a href="http://ASP.NET">ASP.NET</a> Core Web API hoặc là <a href="http://ASP.NET">ASP.NET</a> Web Application (.NET Framework).</p>
+<p>Theo đó thì trên .NET Framework API sẽ như bên dưới. Muốn thay đổi route thì phải chỉnh trong App_Start/WebApiConfig.cs</p>
+<p><code>public class SampleAPIController : ApiController</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn trên NET Core thì tiện hơn có thể set route theo từng controller hoặc từng method luôn, khá là tiện dụng với annonation method.</p>
+<p><code>[ApiController]</code>\
+<code>[Router("[controller]")</code>\
+<code>public class SampleAPIController : ControllerBase</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn Controller thì được dùng cho MVC web pages, tất nhiên rồi!</p>
+<p>Tham khảo thêm ở đây: <a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0"></a><a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0">https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0</a></p>
+<!--EndFragment-->
+<p>Hư Trúc</p>]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/" rel="alternate" type="text/html" />
+    <published>2022-05-09T12:12:27+02:00</published>
+    <updated>2022-05-09T12:12:27+02:00</updated>
+  </entry>
   <entry xml:lang="en">
     <id>https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/</id>
     <title>Some tricks with NET 6.0</title>

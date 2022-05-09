@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/</loc>
-    <lastmod>2022-05-06</lastmod>
+    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <lastmod>2022-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cecilapp.github.io/the-butler/</loc>
+    <loc>https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/</loc>
+    <lastmod>2022-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

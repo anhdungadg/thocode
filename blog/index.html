@@ -64,7 +64,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.95.0" />
+    <meta name="generator" content="Cecil 5.96.0" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -80,11 +80,36 @@
           <a class="sidebar-nav-item active item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.95.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.96.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
       <div class="posts">
+        <div class="post">
+          <h1 class="post-title">
+            <a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/">Controller, ControllerBase, ApiController</a>
+          </h1>
+          <span class="post-date">9 May 2022</span>
+          <!--StartFragment-->
+<p>Hồi đầu nhìn thấy có vẻ giống nhau, hơi lộn lẹo nên phải biên lại đây cho dễ nhớ.</p>
+<p>Bạn sẽ nhìn thấy 3 class này khi khởi tạo dự án WebAPI (là <a href="http://ASP.NET">ASP.NET</a> Core Web API hoặc là <a href="http://ASP.NET">ASP.NET</a> Web Application (.NET Framework).</p>
+<p>Theo đó thì trên .NET Framework API sẽ như bên dưới. Muốn thay đổi route thì phải chỉnh trong App_Start/WebApiConfig.cs</p>
+<p><code>public class SampleAPIController : ApiController</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn trên NET Core thì tiện hơn có thể set route theo từng controller hoặc từng method luôn, khá là tiện dụng với annonation method.</p>
+<p><code>[ApiController]</code>\
+<code>[Router("[controller]")</code>\
+<code>public class SampleAPIController : ControllerBase</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn Controller thì được dùng cho MVC web pages, tất nhiên rồi!</p>
+<p>Tham khảo thêm ở đây: <a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0"></a><a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0">https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0</a></p>
+<!--EndFragment-->
+<p>Hư Trúc</p>
+        </div>
         <div class="post">
           <h1 class="post-title">
             <a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/">Some tricks with NET 6.0</a>
@@ -141,15 +166,6 @@
 <p>Sau khi đã rebuild file APK bằng lệnh thì chúng ta cần sign APK này mới có thể đem cài trên thiết bị được, tải nguyên cục này về <a href="https://github.com/techexpertize/SignApk"></a><a href="https://github.com/techexpertize/SignApk">https://github.com/techexpertize/SignApk</a>.</p>
 <p><strong>Nhiếp Phong</strong></p>
 <!--EndFragment-->
-        </div>
-        <div class="post">
-          <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/">Taskbar Windows 10 trên Win11</a>
-          </h1>
-          <span class="post-date">23 Mar 2022</span>
-          <p>Windows 11 ngon lành nhưng mà taskbar hơi chán, nhất là với ai xài màn hình rộng, độ phân giải cao muốn nhanh chóng thì đâu có ai phải rê chuột vô group rồi mới click. Vậy mà chả hiểu sao MS lại giấu luôn cái chức năng ungroup.</p>
-<p>Có cái tool miễn phí ở đây <a href="https://github.com/valinet/ExplorerPatcher/releases">https://github.com/valinet/ExplorerPatcher/releases</a>, rất tuyệt vời, chỉ cần tải về rồi chạy file <em>ep_setup.exe</em> là xong.</p>
-<p><strong>Phong Vân</strong></p>
         </div>
       </div>
       <div class="pagination">

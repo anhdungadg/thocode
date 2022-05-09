@@ -34,7 +34,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="first" href="https://cecilapp.github.io/the-butler/">
     <link rel="next" href="https://cecilapp.github.io/the-butler/page/2/">
-    <link rel="last" href="https://cecilapp.github.io/the-butler/page/3/">
+    <link rel="last" href="https://cecilapp.github.io/the-butler/page/4/">
     <link rel="canonical" type="text/html" title="Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được!" href="https://cecilapp.github.io/the-butler/" />
     <link rel="alternate" type="application/atom+xml" title="Thợ Code &middot; Code gì cũng được, miễn có lương thiện là được! (ATOM)" href="https://cecilapp.github.io/the-butler/atom.xml" />
     <meta property="og:locale" content="en_US" />
@@ -64,7 +64,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.95.0" />
+    <meta name="generator" content="Cecil 5.96.0" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -80,35 +80,47 @@
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.95.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.96.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
       <div class="posts">
         <div class="post">
-          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/">Some tricks with NET 6.0</a></h1>
-          <span class="post-date">6 May 2022</span>
-          <img src="https://cecilapp.github.io/the-butler/" />
-          <p>IDE: Visual Studio 2022</p>
-<h1 id="hide-warning-code">Hide Warning Code</h1>
-<p>Open .csproject file, add this line below into the <code>&lt;PropertyGroup&gt;</code></p>
-<p><code>&lt;NoWarn&gt;$(NoWarn);1591&lt;/NoWarn&gt;</code></p>
-<p>In there: 1591 is the Code show in Error List</p>
-<p><img src="/images/screenshot-2022-05-06-123556.e2982249e3e054db02f40028be9a16dd.png" alt="" loading="lazy" width="258" height="223" /></p>
-<p><strong>Hư Trúc</strong></p>
+          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/">Controller, ControllerBase, ApiController</a></h1>
+          <span class="post-date">9 May 2022</span>
+          <img src="https://cecilapp.github.io/the-butler/images/280346323_769963117332482_7918069011979452107_n.jpg" />
+          <!--StartFragment-->
+<p>Hồi đầu nhìn thấy có vẻ giống nhau, hơi lộn lẹo nên phải biên lại đây cho dễ nhớ.</p>
+<p>Bạn sẽ nhìn thấy 3 class này khi khởi tạo dự án WebAPI (là <a href="http://ASP.NET">ASP.NET</a> Core Web API hoặc là <a href="http://ASP.NET">ASP.NET</a> Web Application (.NET Framework).</p>
+<p>Theo đó thì trên .NET Framework API sẽ như bên dưới. Muốn thay đổi route thì phải chỉnh trong App_Start/WebApiConfig.cs</p>
+<p><code>public class SampleAPIController : ApiController</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn trên NET Core thì tiện hơn có thể set route theo từng controller hoặc từng method luôn, khá là tiện dụng với annonation method.</p>
+<p><code>[ApiController]</code>\
+<code>[Router("[controller]")</code>\
+<code>public class SampleAPIController : ControllerBase</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn Controller thì được dùng cho MVC web pages, tất nhiên rồi!</p>
+<p>Tham khảo thêm ở đây: <a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0"></a><a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0">https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0</a></p>
+<!--EndFragment-->
+<p>Hư Trúc</p>
           <footer class="readmore">
-            <a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/#more">Read more ›</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/#more">Read more ›</a>
           </footer>
         </div>
       </div>
       <div class="lastposts">
         <h2>Recent posts</h2>
         <ul>
+          <li><a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/">Some tricks with NET 6.0</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/">Đếm số dòng code (Line of Code, LOC)</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/">Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/">Taskbar Windows 10 trên Win11</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-google-chrome-auto-update-tren-ubuntu/">Làm sao để Google Chrome auto update trên Ubuntu</a></li>
         </ul>
       </div>
     </div>
