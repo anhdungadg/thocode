@@ -5,6 +5,9 @@ image: /images/280346323_769963117332482_7918069011979452107_n.jpg
 tags:
   - net6
   - netcore
+  - controller
+  - controllerbase
+  - apicontroller
 draft: false
 ---
 <!--StartFragment-->
