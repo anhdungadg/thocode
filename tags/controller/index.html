@@ -27,21 +27,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>newbie &middot; Thợ Code</title>
+    <title>controller &middot; Thợ Code</title>
     <meta name="description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="keywords" content="ThoCode 1.1, Thợ Code, Nghề lập trình, Code mướn, Code Monkey, Software Engineer, Software Developer, Career path, Cloud, Web3, Blockchain, Metaverse, Cryptocurrency" />
     <meta name="author" content="ThoCode Team" />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" type="text/html" title="newbie &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/newbie/" />
-    <link rel="alternate" type="application/atom+xml" title="newbie &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/newbie/atom.xml" />
+    <link rel="canonical" type="text/html" title="controller &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/tags/controller/" />
+    <link rel="alternate" type="application/atom+xml" title="controller &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/tags/controller/atom.xml" />
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/net6/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/netcore/">
-    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/controller/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/controllerbase/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/apicontroller/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/dotnet/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/visualstudio/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/c/">
+    <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/newbie/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/loc/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/line/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/code/">
@@ -91,14 +91,14 @@
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/electronic/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/video-games/">
     <link rel="alternate" hreflang="en" href="https://cecilapp.github.io/the-butler/tags/fps/">
-    <link rel="alternate" hreflang="x-default" href="https://cecilapp.github.io/the-butler/tags/newbie/">
+    <link rel="alternate" hreflang="x-default" href="https://cecilapp.github.io/the-butler/tags/controller/">
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Thợ Code" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="newbie &middot; Thợ Code" />
+    <meta property="og:title" content="controller &middot; Thợ Code" />
     <meta property="og:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
-    <meta property="og:url" content="https://cecilapp.github.io/the-butler/tags/newbie/" />
-    <meta name="twitter:title" content="newbie &middot; Thợ Code" />
+    <meta property="og:url" content="https://cecilapp.github.io/the-butler/tags/controller/" />
+    <meta name="twitter:title" content="controller &middot; Thợ Code" />
     <meta name="twitter:description" content="Tiếng nói của giai cấp Công nhân Lập trình" />
     <meta name="twitter:card" content="summary" />
 
@@ -142,25 +142,28 @@
       <div class="posts">
         <div class="post">
           <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/">Controller, ControllerBase, ApiController</a>
           </h1>
-          <span class="post-date">6 Apr 2022</span>
-          <p>C# cho phép dùng operator với Class, Struct</p>
-<pre><code class="language-csharp">public struct Complex
-        {
-            public double Real { get; set; }
-            public double Imaginary { get; set; }
-
-            public static Complex operator +(Complex c1, Complex c2)
-            {
-                return new Complex
-                {
-                    Real = c1.Real + c2.Real,
-                    Imaginary = c1.Imaginary + c2.Imaginary
-                };
-            }
-        }</code></pre>
-<p><strong>Nhiếp Phong</strong></p>
+          <span class="post-date">9 May 2022</span>
+          <!--StartFragment-->
+<p>Hồi đầu nhìn thấy có vẻ giống nhau, hơi lộn lẹo nên phải biên lại đây cho dễ nhớ.</p>
+<p>Bạn sẽ nhìn thấy 3 class này khi khởi tạo dự án WebAPI (là <a href="http://ASP.NET">ASP.NET</a> Core Web API hoặc là <a href="http://ASP.NET">ASP.NET</a> Web Application (.NET Framework).</p>
+<p>Theo đó thì trên .NET Framework API sẽ như bên dưới. Muốn thay đổi route thì phải chỉnh trong App_Start/WebApiConfig.cs</p>
+<p><code>public class SampleAPIController : ApiController</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn trên NET Core thì tiện hơn có thể set route theo từng controller hoặc từng method luôn, khá là tiện dụng với annonation method.</p>
+<p><code>[ApiController]</code>\
+<code>[Router("[controller]")</code>\
+<code>public class SampleAPIController : ControllerBase</code>\
+<code>{</code>\
+<code>// your code in here</code>\
+<code>}</code></p>
+<p>Còn Controller thì được dùng cho MVC web pages, tất nhiên rồi!</p>
+<p>Tham khảo thêm ở đây: <a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0"></a><a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0">https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0</a></p>
+<!--EndFragment-->
+<p>Hư Trúc</p>
         </div>
       </div>
     </div>
