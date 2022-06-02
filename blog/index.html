@@ -34,7 +34,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="first" href="https://cecilapp.github.io/the-butler/blog/">
     <link rel="next" href="https://cecilapp.github.io/the-butler/blog/page/2/">
-    <link rel="last" href="https://cecilapp.github.io/the-butler/blog/page/3/">
+    <link rel="last" href="https://cecilapp.github.io/the-butler/blog/page/4/">
     <link rel="canonical" type="text/html" title="Blog &middot; Thợ Code" href="https://cecilapp.github.io/the-butler/blog/" />
     <link rel="alternate" type="application/atom+xml" title="Blog &middot; Thợ Code (ATOM)" href="https://cecilapp.github.io/the-butler/blog/atom.xml" />
     <meta property="og:locale" content="en_US" />
@@ -64,7 +64,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.96.2" />
+    <meta name="generator" content="Cecil 5.98.3" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -80,11 +80,31 @@
           <a class="sidebar-nav-item active item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.96.2">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.98.3">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
       <div class="posts">
+        <div class="post">
+          <h1 class="post-title">
+            <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-publish-package-len-nuget-org/">Làm sao để publish package lên Nuget.org</a>
+          </h1>
+          <span class="post-date">2 Jun 2022</span>
+          <h1 id="1-nuget-là-gì">1. Nuget là gì?</h1>
+<p>Đã có người trả rồi, nên bạn cứ coi ở đây: <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">https://anhdung.me/2015/04/02/nuget-la-gi/ </a></p>
+<p>Thật ra, nếu mà bạn không biết <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">Nuget là gì</a> thì chắc cũng không cần phải coi thêm mấy bước sau chi nữa đâu.</p>
+<h1 id="2-đăng-ký-tài-khoản-trên-nuget-org">2. Đăng ký tài khoản trên nuget.org</h1>
+<p>Vào <a href="https://www.nuget.org/">https://www.nuget.org/</a> là xong thôi. Nuget hiện chỉ cần có Microsoft account (chẳng hạn như Office 365, các dịch vụ mail xưa nay hotmail/ outlook/ live) là có thể Signin vô được.</p>
+<p>Signin vô được rồi thì click vô account name của mình, chọn mục API Keys rồi click Create để tạo key. Tạo xong nhớ copy để xuống bước 3 mình có mình xài nghen.</p>
+<h1 id="3-build-code-và-publish">3. Build code và publish</h1>
+<p>Cứ làm cái gì mình thích, bên dưới là một vài thứ hay ho bạn có thể thêm vào trong file csproj để hiển thị khi publish lên Nuget. Trong đó thuộc tính GenerateDocumentationFile sẽ cho phép giữ nguyên thông tin comment không bị mất.</p>
+<p><code>&lt;Description&gt;My Awesome Package&lt;Description/&gt;</code>\
+`<GenerateDocumentationFile>true</GenerateDocumentationFile></p>
+<packageid>AwesomePackage</packageid>
+<version>1.0.0</version>
+<authors>Fun Corp</authors>
+<company>Fun Inc</company>
+        </div>
         <div class="post">
           <h1 class="post-title">
             <a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/">Controller, ControllerBase, ApiController</a>
@@ -153,19 +173,6 @@
           <p>Nếu xài Visual Studio thì có cái tool Calculate Code Metrics trong menu Analyze.</p>
 <p>Hoặc không thì mở Power Shell lên cd vô folder cần đếm rồi chạy, nhớ thêm/ xóa mấy cái file ext cần thiết nha.</p>
 <p><strong><em>(gci -include .cs,.xaml,.js,.cshtml -recurse | select-string .).Count</em></strong></p>
-        </div>
-        <div class="post">
-          <h1 class="post-title">
-            <a href="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/">Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK</a>
-          </h1>
-          <span class="post-date">3 Apr 2022</span>
-          <!--StartFragment-->
-<p>Có nhiều lý do để phải decompile một file APK trên Android, nếu bạn cần thì theo các bước sau đây và chỉ với 3 câu lệnh là xong.</p>
-<p>Vì các tool này đều viết bằng Java nên đầu tiên là cài đặt Java 8, trang chủ <a href="https://www.java.com/en/"></a><a href="https://www.java.com/en/">https://www.java.com/en/</a> mấy chục năm rồi vẫn thế, chả có thay đổi gì. Trên Windows nếu cài xong mà chạy lệnh java -version không có gì thì nhớ thêm Path đến folder cài java trong System environment variables.</p>
-<p>Xong rồi thì tải apktool về, coi hướng dẫn chi tiết trong này <a href="https://ibotpeaches.github.io/Apktool/install/"></a><a href="https://ibotpeaches.github.io/Apktool/install/">https://ibotpeaches.github.io/Apktool/install/</a>. Không nhất thiết phải move vào C:\Windows hay /usr/local/bin chi đâu, vẫn có thể chạy lệnh apktool từ chỗ khác được.</p>
-<p>Sau khi đã rebuild file APK bằng lệnh thì chúng ta cần sign APK này mới có thể đem cài trên thiết bị được, tải nguyên cục này về <a href="https://github.com/techexpertize/SignApk"></a><a href="https://github.com/techexpertize/SignApk">https://github.com/techexpertize/SignApk</a>.</p>
-<p><strong>Nhiếp Phong</strong></p>
-<!--EndFragment-->
         </div>
       </div>
       <div class="pagination">

@@ -65,7 +65,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.96.2" />
+    <meta name="generator" content="Cecil 5.98.3" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -81,47 +81,41 @@
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.96.2">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.98.3">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
       <div class="posts">
         <div class="post">
-          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/">Controller, ControllerBase, ApiController</a></h1>
-          <span class="post-date">9 May 2022</span>
-          <img src="https://cecilapp.github.io/the-butler/images/280346323_769963117332482_7918069011979452107_n.jpg" />
-          <!--StartFragment-->
-<p>Hồi đầu nhìn thấy có vẻ giống nhau, hơi lộn lẹo nên phải biên lại đây cho dễ nhớ.</p>
-<p>Bạn sẽ nhìn thấy 3 class này khi khởi tạo dự án WebAPI (là <a href="http://ASP.NET">ASP.NET</a> Core Web API hoặc là <a href="http://ASP.NET">ASP.NET</a> Web Application (.NET Framework).</p>
-<p>Theo đó thì trên .NET Framework API sẽ như bên dưới. Muốn thay đổi route thì phải chỉnh trong App_Start/WebApiConfig.cs</p>
-<p><code>public class SampleAPIController : ApiController</code>\
-<code>{</code>\
-<code>// your code in here</code>\
-<code>}</code></p>
-<p>Còn trên NET Core thì tiện hơn có thể set route theo từng controller hoặc từng method luôn, khá là tiện dụng với annonation method.</p>
-<p><code>[ApiController]</code>\
-<code>[Router("[controller]")</code>\
-<code>public class SampleAPIController : ControllerBase</code>\
-<code>{</code>\
-<code>// your code in here</code>\
-<code>}</code></p>
-<p>Còn Controller thì được dùng cho MVC web pages, tất nhiên rồi!</p>
-<p>Tham khảo thêm ở đây: <a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0"></a><a href="https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0">https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0</a></p>
-<!--EndFragment-->
-<p>Hư Trúc</p>
+          <h1 class="post-title"><a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-publish-package-len-nuget-org/">Làm sao để publish package lên Nuget.org</a></h1>
+          <span class="post-date">2 Jun 2022</span>
+          <h1 id="1-nuget-là-gì">1. Nuget là gì?</h1>
+<p>Đã có người trả rồi, nên bạn cứ coi ở đây: <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">https://anhdung.me/2015/04/02/nuget-la-gi/ </a></p>
+<p>Thật ra, nếu mà bạn không biết <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">Nuget là gì</a> thì chắc cũng không cần phải coi thêm mấy bước sau chi nữa đâu.</p>
+<h1 id="2-đăng-ký-tài-khoản-trên-nuget-org">2. Đăng ký tài khoản trên nuget.org</h1>
+<p>Vào <a href="https://www.nuget.org/">https://www.nuget.org/</a> là xong thôi. Nuget hiện chỉ cần có Microsoft account (chẳng hạn như Office 365, các dịch vụ mail xưa nay hotmail/ outlook/ live) là có thể Signin vô được.</p>
+<p>Signin vô được rồi thì click vô account name của mình, chọn mục API Keys rồi click Create để tạo key. Tạo xong nhớ copy để xuống bước 3 mình có mình xài nghen.</p>
+<h1 id="3-build-code-và-publish">3. Build code và publish</h1>
+<p>Cứ làm cái gì mình thích, bên dưới là một vài thứ hay ho bạn có thể thêm vào trong file csproj để hiển thị khi publish lên Nuget. Trong đó thuộc tính GenerateDocumentationFile sẽ cho phép giữ nguyên thông tin comment không bị mất.</p>
+<p><code>&lt;Description&gt;My Awesome Package&lt;Description/&gt;</code>\
+`<GenerateDocumentationFile>true</GenerateDocumentationFile></p>
+<packageid>AwesomePackage</packageid>
+<version>1.0.0</version>
+<authors>Fun Corp</authors>
+<company>Fun Inc</company>
           <footer class="readmore">
-            <a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/#more">Read more ›</a>
+            <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-publish-package-len-nuget-org/#more">Read more ›</a>
           </footer>
         </div>
       </div>
       <div class="lastposts">
         <h2>Recent posts</h2>
         <ul>
+          <li><a href="https://cecilapp.github.io/the-butler/blog/controller-controllerbase-apicontroller/">Controller, ControllerBase, ApiController</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/">Some tricks with NET 6.0</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/overloadable-operators/">Overloadable operators</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/dem-so-dong-code-line-of-code-loc/">Đếm số dòng code (Line of Code, LOC)</a></li>
           <li><a href="https://cecilapp.github.io/the-butler/blog/lam-the-nao-de-dich-nguoc-decompile-reverse-engineering-android-apk/">Làm thế nào để dịch ngược (decompile, reverse engineering) Android APK</a></li>
-          <li><a href="https://cecilapp.github.io/the-butler/blog/taskbar-windows-10-tren-win11/">Taskbar Windows 10 trên Win11</a></li>
         </ul>
       </div>
     </div>

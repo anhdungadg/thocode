@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://cecilapp.github.io/the-butler/tags/nuget/</id>
+  <title>Thợ Code - nuget</title>
+  <subtitle><![CDATA[Tiếng nói của giai cấp Công nhân Lập trình]]></subtitle>
+  <link href="https://cecilapp.github.io/the-butler/tags/nuget/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://cecilapp.github.io/the-butler/tags/nuget/" rel="alternate" type="text/html" />
+  <updated>2022-06-02T08:55:14+02:00</updated>
+  <author>
+    <name>Thợ Code</name>
+    <uri>https://cecilapp.github.io/the-butler/</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>https://cecilapp.github.io/the-butler/blog/lam-sao-de-publish-package-len-nuget-org/</id>
+    <title>Làm sao để publish package lên Nuget.org</title>
+    <content type="html">
+      <![CDATA[<h1 id="1-nuget-là-gì">1. Nuget là gì?</h1>
+<p>Đã có người trả rồi, nên bạn cứ coi ở đây: <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">https://anhdung.me/2015/04/02/nuget-la-gi/ </a></p>
+<p>Thật ra, nếu mà bạn không biết <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">Nuget là gì</a> thì chắc cũng không cần phải coi thêm mấy bước sau chi nữa đâu.</p>
+<h1 id="2-đăng-ký-tài-khoản-trên-nuget-org">2. Đăng ký tài khoản trên nuget.org</h1>
+<p>Vào <a href="https://www.nuget.org/">https://www.nuget.org/</a> là xong thôi. Nuget hiện chỉ cần có Microsoft account (chẳng hạn như Office 365, các dịch vụ mail xưa nay hotmail/ outlook/ live) là có thể Signin vô được.</p>
+<p>Signin vô được rồi thì click vô account name của mình, chọn mục API Keys rồi click Create để tạo key. Tạo xong nhớ copy để xuống bước 3 mình có mình xài nghen.</p>
+<h1 id="3-build-code-và-publish">3. Build code và publish</h1>
+<p>Cứ làm cái gì mình thích, bên dưới là một vài thứ hay ho bạn có thể thêm vào trong file csproj để hiển thị khi publish lên Nuget. Trong đó thuộc tính GenerateDocumentationFile sẽ cho phép giữ nguyên thông tin comment không bị mất.</p>
+<p><code>&lt;Description&gt;My Awesome Package&lt;Description/&gt;</code>\
+`<GenerateDocumentationFile>true</GenerateDocumentationFile></p>
+<packageid>AwesomePackage</packageid>
+<version>1.0.0</version>
+<authors>Fun Corp</authors>
+<company>Fun Inc</company>]]>
+    </content>
+    <link href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-publish-package-len-nuget-org/" rel="alternate" type="text/html" />
+    <published>2022-06-02T08:55:14+02:00</published>
+    <updated>2022-06-02T08:55:14+02:00</updated>
+  </entry>
+</feed>
