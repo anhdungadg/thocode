@@ -28,7 +28,7 @@ Signin vô được rồi thì click vô account name của mình, chọn mục 
 
 Cứ làm cái gì mình thích, bên dưới là một vài thứ hay ho bạn có thể thêm vào trong file csproj để hiển thị khi publish lên Nuget. Trong đó thuộc tính GenerateDocumentationFile sẽ cho phép giữ nguyên thông tin comment không bị mất.
 
-`<Description>My Awesome Package<Description/>`\
+`<Description>My Awesome Package<Description/>`
 `<GenerateDocumentationFile>true</GenerateDocumentationFile>
 <PackageId>AwesomePackage</PackageId>
 <Version>1.0.0</Version>
