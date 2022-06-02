@@ -97,12 +97,24 @@
 <p>Signin vô được rồi thì click vô account name của mình, chọn mục API Keys rồi click Create để tạo key. Tạo xong nhớ copy để xuống bước 3 mình có mình xài nghen.</p>
 <h1 id="3-build-code-và-publish">3. Build code và publish</h1>
 <p>Cứ làm cái gì mình thích, bên dưới là một vài thứ hay ho bạn có thể thêm vào trong file csproj để hiển thị khi publish lên Nuget. Trong đó thuộc tính GenerateDocumentationFile sẽ cho phép giữ nguyên thông tin comment không bị mất.</p>
-<p><code>&lt;Description&gt;My Awesome Package&lt;Description/&gt;</code>\
-`<GenerateDocumentationFile>true</GenerateDocumentationFile></p>
+<description>My Awesome Package<description></description>
+<generatedocumentationfile>true</generatedocumentationfile>
 <packageid>AwesomePackage</packageid>
 <version>1.0.0</version>
 <authors>Fun Corp</authors>
 <company>Fun Inc</company>
+
+Sau khi xong xuôi thì Build lại project thử, build xong thì Pack. Giờ đây trong thư mục bin/Debug sẽ xuất hiện thêm file xxx.version.nupkg, đây chính là file bạn cần publish lên.
+
+Giờ mở terminal lên, cd vô ngay thư mục vừa tạo ra file nupkg hồi nãy.
+
+dotnet nuget push xxx.version.nupkg --api-key \[key hồi này mới copy] --source https://api.nuget.org/v3/index.json
+
+# 4. Xong
+
+Vô lại nuget.org chọn Manage Packages rồi coi package đã được duyệt và listed chưa. Trong này cũng có nhiều chỗ hay ho như là update lại thông tin Readme, bla bla bla...
+
+**Hư Trúc**</description>
           <footer class="readmore">
             <a href="https://cecilapp.github.io/the-butler/blog/lam-sao-de-publish-package-len-nuget-org/#more">Read more ›</a>
           </footer>
