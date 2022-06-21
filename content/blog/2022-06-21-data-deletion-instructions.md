@@ -1,7 +1,7 @@
 ---
 title: DATA DELETION INSTRUCTIONS
 date: 2022-06-21T09:15:37.927Z
-draft: true
+draft: false
 ---
 <!--StartFragment-->
 
