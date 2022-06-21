@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cecilapp.github.io/the-butler/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/the-butler/blog/privacy-notice/</loc>
+    <lastmod>2022-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

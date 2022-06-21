@@ -47,7 +47,7 @@
 <p>Open .csproject file, add this line below into the <code>&lt;PropertyGroup&gt;</code></p>
 <p><code>&lt;NoWarn&gt;$(NoWarn);1591&lt;/NoWarn&gt;</code></p>
 <p>In there: 1591 is the Code show in Error List</p>
-<p><img src="/images/screenshot-2022-05-06-123556.e2982249e3e054db02f40028be9a16dd.png" alt="" loading="lazy" width="258" height="223" /></p>
+<img src="/images/screenshot-2022-05-06-123556.e2982249e3e054db02f40028be9a16dd.png" alt="" loading="lazy" width="258" height="223" />
 <p><strong>Hư Trúc</strong></p>]]>
     </content>
     <link href="https://cecilapp.github.io/the-butler/blog/some-tricks-with-net-6-0/" rel="alternate" type="text/html" />

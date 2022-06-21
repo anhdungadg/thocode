@@ -15,7 +15,7 @@
     <title>Làm sao để publish package lên Nuget.org</title>
     <content type="html">
       <![CDATA[<h1 id="1-nuget-là-gì">1. Nuget là gì?</h1>
-<p>Đã có người trả rồi, nên bạn cứ coi ở đây: <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">https://anhdung.me/2015/04/02/nuget-la-gi/ </a></p>
+<p>Đã có người trả lời câu hỏi này rồi, nên bạn cứ coi ở đây: <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">https://anhdung.me/2015/04/02/nuget-la-gi/ </a></p>
 <p>Thật ra, nếu mà bạn không biết <a href="https://anhdung.me/2015/04/02/nuget-la-gi/">Nuget là gì</a> thì chắc cũng không cần phải coi thêm mấy bước sau chi nữa đâu.</p>
 <h1 id="2-đăng-ký-tài-khoản-trên-nuget-org">2. Đăng ký tài khoản trên nuget.org</h1>
 <p>Vào <a href="https://www.nuget.org/">https://www.nuget.org/</a> là xong thôi. Nuget hiện chỉ cần có Microsoft account (chẳng hạn như Office 365, các dịch vụ mail xưa nay hotmail/ outlook/ live) là có thể Signin vô được.</p>

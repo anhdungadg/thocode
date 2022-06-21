@@ -69,7 +69,7 @@
   gtag('config', 'G-44WW52V9QR');
 </script>
 
-    <meta name="generator" content="Cecil 5.98.3" />
+    <meta name="generator" content="Cecil 5.102.0" />
   </head>
   <body class="">
     <div class="sidebar">
@@ -85,7 +85,7 @@
           <a class="sidebar-nav-item item-weight-100" href="https://cecilapp.github.io/the-butler/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="https://cecilapp.github.io/the-butler/about/">About</a>
         </nav>
-        <p>Powered by <a href="https://cecil.app/#5.98.3">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
+        <p>Powered by <a href="https://cecil.app/#5.102.0">Cecil</a> &amp; <a href="https://github.com/poole/hyde#readme">Hyde</a>.</p>
       </div>
     </div>
     <div class="content container">
@@ -100,11 +100,11 @@
 <p>Sở dĩ lựa AWS (hay các cloud provider khác cũng thế) là tại vì mấy người không biết gì như tui giờ già cả rồi thời gian nghiên cứu không còn nhiều, sức khỏe thì yếu không khiêng nổi mấy con server 4U 8U nhét vô rack cao hơn đầu người rồi lọ mọ cả buổi trong cái phòng có mười mấy độ với độ ẩm 50% nổi nữa, thành ra cứ lên mây cho sướng. Thiên hạ hay nói ba cái chuyện mây mưa sướng lắm, thật là sướng thật!</p>
 <p>OK, vậy chúng ta sẽ xài Ethereum Ropsten Testnet với sự giúp sức đắc lực của Amazon Managed Blockchain cùng với lủ khủ một mớ mấy cái services khác phụ họa như hình minh họa bên dưới. Tất cả những services này đều được khởi tạo bằng CloudFormation.</p>
 <p>Trong quá trình vọc vạch thì, tốn tiền nhất là Amazon Managed Blockchain vì xài On-Demand tính theo giờ, còn các services khác đều rơi vào free tier hết nên khá thoải mái. </p>
-<p><img src="/assets/raudangdat.files.wordpress.com/2022/01/nft-marketplace-aws-architecture.f7cb97efde53e1abeacc6cb4bd0fbe26.png" alt="" loading="lazy" width="821" height="527" /></p>
+<img src="/assets/raudangdat.files.wordpress.com/2022/01/nft-marketplace-aws-architecture.f7cb97efde53e1abeacc6cb4bd0fbe26.png" alt="" loading="lazy" width="821" height="527" />
 <p>Hình của AWS Sample.</p>
 <h2 id="bắt-đầu">Bắt đầu</h2>
 <p>Kiểm tra phiên bản Nodejs, mấy phiên bản cũ quá không còn support hay gặp nhiều lỗi trời ơi đất hỡi lắm. Trên Ubuntu mặc định cài vô là bản 10.x, thành ra phải update hoặc lúc cài mới nhớ chú ý theo hướng dẫn này: <a href="https://thocode.net/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/"></a><a href="https://thocode.net/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/">https://thocode.net/blog/cai-dat-node-js-phien-ban-moi-nhat-tren-ubuntu-wsl2/</a></p>
-<p><img src="/assets/raudangdat.files.wordpress.com/2022/01/cdk-nodejs-unsupport-version.bba5f5842671a686d7c2b5916e3af24c.png" alt="" loading="lazy" width="1053" height="300" /></p>
+<img src="/assets/raudangdat.files.wordpress.com/2022/01/cdk-nodejs-unsupport-version.bba5f5842671a686d7c2b5916e3af24c.png" alt="" loading="lazy" width="1053" height="300" />
 <p>CDK không chạy được với các phiên bản Nodejs cũ.</p>
 <p>Clone source và install dependencies</p>
 <p><code>git clone https://github.com/aws-samples/simple-nft-marketplace.git</code></p>
@@ -135,11 +135,11 @@
 const contract = await SimpleERC721.attach('&lt;contract address&gt;');
 await contract.newItem('dummy');</code></pre>
 <p>Thấy vầy là OK:</p>
-<p><img src="/assets/raudangdat.files.wordpress.com/2022/01/hardhat-contract-deploy.b239ee833f014468e851603bda0ce6de.png" alt="" loading="lazy" width="1011" height="704" /></p>
+<img src="/assets/raudangdat.files.wordpress.com/2022/01/hardhat-contract-deploy.b239ee833f014468e851603bda0ce6de.png" alt="" loading="lazy" width="1011" height="704" />
 <p>Quay lại MetaMask sẽ thấy đã tốn:</p>
-<p><img src="/assets/raudangdat.files.wordpress.com/2022/01/metamask-localhost8545.1177aa8e244f123292a745b3663edef2.png" alt="" loading="lazy" width="432" height="632" /></p>
+<img src="/assets/raudangdat.files.wordpress.com/2022/01/metamask-localhost8545.1177aa8e244f123292a745b3663edef2.png" alt="" loading="lazy" width="432" height="632" />
 <p>Nếu nhìn trên terminal 1 (server) cũng sẽ thấy các thông tin thế này</p>
-<p><img src="/assets/raudangdat.files.wordpress.com/2022/01/hardhat-server-terminal.9d154ecad68f8d6d2253c36e8059863f.png" alt="" loading="lazy" width="1138" height="181" /></p>
+<img src="/assets/raudangdat.files.wordpress.com/2022/01/hardhat-server-terminal.9d154ecad68f8d6d2253c36e8059863f.png" alt="" loading="lazy" width="1138" height="181" />
 <h3 id="chạy-thử-trên-ethereum-ropsten-testnet">Chạy thử trên Ethereum Ropsten Testnet</h3>
 <p>Đăng nhập vô AWS Console &gt; Managed Blockchain &gt; Networks &gt; Ethereum Testnet Ropsten &gt; tạo một node &gt; copy HTTP Endpoint để thế vô lệnh này. Hết sức chú ý là phải có https nữa nha, tui gặp lỗi mò đã đời mới biết.</p>
 <p><code>export AMB_HTTP_ENDPOINT='&lt;my-endpoint&gt;'</code></p>
@@ -200,7 +200,7 @@ EOF</code></pre>
 <p>Trường hợp lỗi liên quan đến vue-cli-service thì cài thêm dependence rồi chạy lại npm run serve.</p>
 <p><code>npm i @vue/cli-service</code></p>
 <p>Thấy báo địa chỉ Local với Network là OK, lấy browser mở ra vầy là coi như OK lần 2.</p>
-<p><img src="/assets/raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.87f482b7ed1e808ebc3925cec59f2c04.png" alt="" loading="lazy" width="650" height="615" /></p>
+<img src="/assets/raudangdat.files.wordpress.com/2022/01/nft-marketplace-frontend.87f482b7ed1e808ebc3925cec59f2c04.png" alt="" loading="lazy" width="650" height="615" />
 <p><a href="https://anhdung.me/">Anh Dũng</a>. Photo by <a href="https://unsplash.com/@theshubhamdhage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shubham Dhage</a> on <a href="https://unsplash.com/s/photos/blockchain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <!--EndFragment-->
       <p>
