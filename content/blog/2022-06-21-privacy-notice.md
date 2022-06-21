@@ -1,7 +1,7 @@
 ---
 title: Privacy Notice
 date: 2022-06-21T09:08:03.503Z
-draft: true
+draft: false
 ---
 <!--StartFragment-->
 
