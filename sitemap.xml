@@ -8,6 +8,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://cecilapp.github.io/the-butler/blog/data-deletion-instructions/</loc>
+    <lastmod>2022-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://cecilapp.github.io/the-butler/blog/privacy-notice/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>monthly</changefreq>
